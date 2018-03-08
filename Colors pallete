@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author"  content="Susana deOliveira">
+
+        <!-- The viewport portmeta tag  gives the browser instructions on how to control the page's dimensions and scaling.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Colors Pallete</title>
+        <!-- I use colors supported by all browsers -->
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet"> 
+        
+        <!-- I use the favicon and images from my personal blog because my browser is outdaded -->
+        <link href="https://susanadeoliveira-autora.blogspot.pt/favicon.ico" rel="icon" type="image/x-icon">
+  
+        <base target="_blank">
+
+    </head>
+    <body> 
+        <div class="container">
+	      
+            <div class="color-Row">
+	        <div class="col">
+	            <div class="list">
+		        <ul>
+		            <li>Name</li>  
+                            <li>HEX value</li>
+                            <li>RGB value</li>
+                        </ul>
+	   	    </div>
+			
+	            <div class="color-Col">
+                        <div class="ivory"></div>
+		        <ul>
+		            <li>Ivory</li>  
+                            <li>#fffff0</li>
+                            <li>(255, 255, 240)</li>
+                        </ul>
+                    </div>
+		    
+		    <div class="location">Background-color: buttom
+	        nav, page / Bottom for images.</div> 	            
+	        </div>
+            </div>
+	      
+            <div class="color-Row">
+	        <div class="col">
+	            <div class="list">
+		        <ul>
+		            <li>Name</li>  
+                            <li>HEX value</li>
+                            <li>RGB value</li>
+                        </ul>
+	   	     </div>
+			
+	             <div class="color-Col">
+                         <div class="dim-gray"></div>
+		         <ul>
+		             <li>Dim Gray</li>  
+                             <li>#696969</li>
+                             <li>(105, 105, 105)</li>
+                         </ul>
+                     </div>
+
+		     <div class="location">Background-color: nav /
+	         logo / hr / Text: page, nav / Double line: Footer</div>
+	         </div>
+	     </div>
+	       
+            <div class="color-Row">
+	        <div class="col">
+	            <div class="list">
+		        <ul>
+		            <li>Name</li>  
+                            <li>HEX value</li>
+                            <li>RGB value</li>
+                        </ul>
+		    </div>
+		    
+	            <div class="color-Col">
+                        <div class="dark-slate-gray"></div>
+		        <ul>
+		            <li>DarkSlateGray</li>  
+                            <li>#2f4f4f</li>
+                            <li>(47, 79, 79)</li>
+                        </ul>
+	            </div>
+
+		    <div class="location">h2, h3</div>
+               </div>				
+	    </div>		
+        </div>
+    </body>
+</html>
