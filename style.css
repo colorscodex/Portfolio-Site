@@ -1,0 +1,113 @@
+/*
+*   I use colors supported by all browsers.
+*   =======================================
+*/
+
+*{
+    box-sizing: border-box
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: "News Cycle", sans-serif;
+    text-align: left;
+    margin: 20px  auto;
+    padding: 1%; 
+    width: 400px;   
+    max-width: 100%;
+    background-color:  #f5f5f5;
+    color:  #008000;
+    border-left: 7px solid  #ff7f50;
+    box-shadow: 0px 5px 15px #999;
+}
+
+.color-Row {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.color-Row:first-of-type {
+   margin-top: 10px;
+}
+
+.col {
+   width: 100%;
+   display: flex;
+   padding-right: 10px;
+}
+
+.color-Col {
+   width: 40%;
+}
+
+/*  Squares of colors */
+
+.ivory,
+.dim-gray,
+.dark-slate-gray {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    box-shadow: 0px 5px 5px #c0c0c0;
+}
+
+.ivory {
+    background-color: #fffff0;
+}
+
+.dim-gray {
+    background-color: #696969;
+}
+
+.dark-slate-gray {
+    background-color: #2f4f4f;
+}
+
+/* 
+*   Properties of the list for the color specifications.
+*   =============================================================
+*/ 
+
+.list {
+   width: 30%;
+   margin-top: 50px;
+   margin-left: 5px;
+}
+
+/*  
+*  Properties for the area where I use the colors.
+*  =============================================================
+*/ 
+
+.location {
+   font: 400 14px News Cycke, sans-serif;
+   width: 30%;
+   text-justify: inter-word;  
+}
+
+/*
+*  Remove padding-left and style the list items from the list.
+*  =============================================================
+*/      
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+        
+li {
+    font: 400 13px News Cycle, sans-serif;           
+}
+
+
+@media screen and (max-width: 400px){
+    .location {
+        font: 12px;   
+    }
+}
