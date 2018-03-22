@@ -1,0 +1,711 @@
+/*  For all browsers
+ */
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+/*
+ *   For preventing adjustments of font size after 
+ *   orientation changes in IE and iOS.
+ *   ===========================================
+ */
+
+html {
+    font-family: "News Cycle", sans-serif;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+}
+
+/* In common */
+/*
+ *  display: -webkit-flex as an alternative 
+ *  for display: flex for Safari.
+ *  ===============================================
+ */
+
+nav,
+.navbar-list,
+header,
+.bottom-container,
+.up,
+.colors-page,
+.card {
+    -webkit-flex: flex;
+    display: flex;
+}
+
+/*
+ *  -webkit-justify-content: center 
+ *  as an alternative for the propertie justify-content
+ *  for Safari 6.1 (and newer).
+ *         
+ */
+
+.colors-page,
+.card,
+.featured-work {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+/*  
+ */
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;    
+    width: 100%;
+    background-color: #fffff0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 100px;
+    background-color: #fffff0;
+    color:  #696969;
+    margin: 0 auto;  
+}
+
+/*  Nav: fixed. */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    color: #fffff0;
+    background-color: #696969;
+    z-index: 10;
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+}
+
+/*  TODO: Button to oppen the modal-collapse with the CV. */
+
+#open-drawer {
+    width: 80px;
+    font: 300 20px "Lato", sans-serif;
+    cursor: pointer;
+    color: #2f4f4f;
+    background-color:  #fffff0; 
+    border: 0;
+    border-radius: 5px;
+    padding: 0 0 2px 0;
+}
+
+#open-drawer:hover {
+    text-decoration: none;
+    color:  #ff7f50;
+}
+.navbar-list {
+    list-style-type: none;
+    padding: 0;    
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cv-button {
+    float: left;
+    width: 20%;
+    margin-left: 20px;
+}
+
+/*  A link to change the page. */
+
+.language {
+    float: right;
+    cursor: pointer;
+    width: 80%;
+    margin-right: 20px;
+    font: 300 20px "Lato", sans-serif;
+    text-align: right;
+}
+
+
+/*  General specifications. */ 
+
+hr,
+h2,
+main,
+header,
+.featured-work,
+.bottom-container {
+    width: 100%;
+    float: left;
+}
+
+header,
+.featured-work,
+.bottom-container {
+    flex-wrap: wrap;
+}
+
+/*  Header */
+
+header {
+    margin-top: 60px;   
+}
+
+.logo-box {
+    width: 30%;
+    height: 150px;   
+}
+
+.personal-information {
+    width: 70%;
+    height: 150px; 
+    text-align: right;   
+}
+
+hr {
+    border: 1.2px solid #696969;
+    margin: 20px 0;
+}
+
+/*  Footers */
+
+.featured-work {
+    border-bottom: 4px double #696969; 
+    padding-bottom: 20px;
+    margin-bottom: 100px;  
+}
+
+/*  To close the page with a desing and a date. */
+
+.bottom-container {
+    justify-content: flex-end; 
+    color:  #2f4f4f;     
+}
+
+/*  
+ *  I use cards for marking up the photos 
+ *  which represent important areas of work.
+ *  ===========================================
+ */
+/*   
+ *  TODO: add a item action to visit other 
+ *  important documents.
+ *  ===========================================
+ */
+
+.card {
+    width: 100%;    
+    background-color: #fffff0;
+    color: #696969;  
+    margin: 30px 0 100px 0;
+    border-radius: 4px;
+}
+
+/*  TODO: the image of the card is an item-action. */
+
+.card-action:hover {
+    text-decoration: none;
+}
+
+.card-action {
+    outline: none;
+    font: 400 30px Lato, sans-serif;
+    color: #696969;
+    cursor: pointer;
+}
+
+/* A link for speciphic projescts. */
+
+.link {
+    outline: none;
+    text-decoration: underline;
+    color: #000080;
+}
+
+/*  For the text of the card and of the language in the nav. */
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #fffff0;
+}
+
+/* Wwhen mouse is over link, change the color.  */
+
+a:hover {
+    text-decoration: none;
+    color: #ff7f50;
+}
+
+/*  Position and center the image to scale nicely on all screens. */
+
+figure {
+     box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+     margin: 0;
+     padding: 0;
+}
+
+figure:hover {
+    text-decoration: none;
+    box-shadow: 0px 2px 5px #c0c0c0;
+}
+
+/*  
+ *  With max-width, for scaling down if it has to,
+ *  but never scale up to be larger than its original size.
+ */
+
+.image-card {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto; 
+    display: block;
+}
+
+/*  Specification of the text properties.*/
+
+h3 {
+    font: 300 30px "Lato", sans-serif;
+    text-align: center;  
+    margin: 30px 0; 
+    text-transform: capitalize; 
+}
+
+.about-image {        
+    display: block;
+    width: 60%;
+}
+
+.text-card {    
+    font: 300 22px "Lato", sans-serif;
+    letter-spacing: 1px;
+    white-space: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0;
+    margin-left: 20px;    
+}
+
+.more-paragraphs {
+    margin: 50px 0;
+    border-left: 4px solid  #2f4f4f;  
+    padding-left: 10px;
+}
+
+.fa-bars {
+    padding-top: 0;
+    text-align: right;
+    margin: 0;
+}
+
+em {
+    font: italic 400 22px "Lato", sans-serif;
+}
+
+/*  
+ *   Specification of the text properties of the page.
+ *   =================================================
+ */
+
+blockquote {
+    font: 300 italic 30px "Raleway", sans-serif;
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    -webkit-text-align-last: center;
+    -ms-text-align-last: center;
+    margin: 100px 200px 70px 200px;
+}
+
+.author {
+    font: 300 20px "Lato", sans-serif;
+}
+
+
+h1 {
+    font: 200 50px "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    margin: 40px 0 0 0;
+}
+
+h2 {
+    font: 300 35px "Lato", sans-serif;
+    text-transform: capitalize; 
+    letter-spacing: 2px;  
+    color:  #2f4f4f;
+    margin: 30px 0 0 10px;
+}
+
+.professional-career {
+    font: 400 20px "Lato", sans-serif;
+    letter-spacing: 1px; 
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.bottom-container p {
+    font: 300 20px Lato, sans-serif; 
+    margin: 20px 5px 20px 0;
+}
+
+/* Colors used in the page. */
+
+.ivory,
+.dim-gray,
+.dark-slate-gray {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    box-shadow: 0px 2px 5px #c0c0c0;
+    margin: 20px 5px;
+}
+
+.ivory {
+    background-color: #fffff0;
+}
+
+.dim-gray {
+    background-color: #696969;
+}
+
+.dark-slate-gray {
+    background-color: #2f4f4f;
+}
+
+/*  Curriculum card: text properties for the professional information. */
+
+#curriculum  h1{
+    font: 400 1.2em "News Cycle", sans-serif;
+    text-transform: none;
+    color:  #2f4f4f; 
+}
+
+#curriculum h2 {
+     font: 400 1em "News Cycle", sans-serif; 
+     color:  #2f4f4f;
+}
+
+/*  
+ *  Specification of the images size.
+ *  ===========================================
+ */
+
+.logo-image {
+    width: 20%;
+    height: auto;
+    border-radius: 50px;
+    margin-top: 45px;
+    display: block;
+}
+
+/*  
+ *  With width 100% and height auto for being 
+ *  responsive and scale up and down. 
+ */
+
+.image-main {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: auto;
+    display: block;
+}
+
+/*  
+ *  Specification for the drawer that contains 
+ *  the CV.
+ *  ===========================================
+ */
+
+#curriculum {
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+/*  
+ *  TODO: A link for going to the top of the page.
+ *  ==============================================
+ */
+
+.up {
+    justify-content: flex-end;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px 5px 10px 0;
+    margin: 10px auto;
+}
+
+.go-top {
+    outline: none;
+    text-decoration: none;
+    color: #ff7f50;
+    justify-content: flex-end;
+    width: 20px;
+    text-align: center;
+    margin-left: 10px; 
+}
+
+/*  
+ *  Layout responsive with two breack points.
+ *  ===========================================
+ *
+ */
+/*  For little screens, it change font-family of the text and centered. */
+ 
+@media screen and (max-width: 450px){
+
+.text-card {    
+        font: 400 20px "News Cycle", sans-serif;
+        margin-left: 0;   
+        text-align: center;
+    }
+
+    .fa-bars {
+       text-align: right;
+    }
+
+    em {
+       font: italic 400 20px "News Cycle", sans-serif;
+    }
+}
+
+/*
+ *   With this media:  the font family for the text is equal 
+ *   for the all page. 
+ */
+
+@media screen and (min-width: 451px) and (max-width: 800px){
+
+    .text-card {    
+        font: 300 20px "Lato", sans-serif;
+        margin-left: 0;   
+        text-align: justify;
+    }
+
+    .fa-bars {
+       text-align: right;
+    }
+
+    em {
+       font: italic 400 20px "Lato", sans-serif;
+    }
+}
+
+/*  Specifications for other elements. */
+
+@media screen and (max-width: 800px){
+
+    .container {
+        padding: 0;
+    }
+
+    .logo-box {
+        height: 80px; 
+        width: 10%;  
+    }
+
+    .personal-information {       
+        height: 80px; 
+        width: 90%;       
+    }
+    
+    hr {
+        margin: 10px 0;
+        border: 1px solid #7d97ad;
+    }
+
+    .featured-work {         
+        text-align: center;
+        float: none;
+        margin-top: 85px 0 20px 0;
+    }
+
+    .card {
+       display: block;
+    }
+
+/*  
+ *  Specification of the images size. 
+ *  ==========================================
+ */
+
+    .logo-image {
+        width: 55%;
+        height: auto;
+        margin-top: 25px;
+    }
+
+/*  
+ *  With a value for max-width, for scaling down if it has to,
+ *  but never scale up to be larger than its original size.
+ */
+    .image-card {
+        width: 100%; 
+        max-width: 500px;
+        margin: auto;     
+    }
+
+/*  Specification of the text properties. */
+
+     blockquote {
+        font: 400 20px "Raleway", sans-serif;
+        padding: 0 12px;
+        margin: 30px 0 20px 0;
+    }
+    
+    .author {
+        font: 300 16px "Lato", sans-serif;
+        text-align: right;
+    }
+
+    .language {
+        font-size: 15px;
+        padding: 5px;
+    }
+   
+    .cv-buttom {        
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+     
+    h1 {
+        font: 300 22px "Lato", sans-serif;
+        margin-top: 22px;
+    }
+
+    .professional-career {
+        font-size: 14px;
+    }
+
+    h2 {
+        font: 300 25px "Lato", sans-serif;
+        margin: 10px 0 30px 0;
+    }
+    
+    h3 {
+        font: 300 20px "Lato", sans-serif;
+        margin: 20px 0;
+    }
+
+    .about-image {    
+        width: 100%;
+        padding-top: 0;
+    }
+    
+    .bottom-container p {
+        font: 300 14px Lato, sans-serif;
+        padding-top: 2px; 
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px){
+
+    .logo-box {
+        width: 30%;
+        height: 120px;   
+    }
+
+    .personal-information {
+        width: 70%;
+        height: 120px; 
+        text-align: right;   
+    }
+
+    .logo-image {
+        margin-top: 32px;
+    }
+
+    .about-image {        
+        display: block;
+        width: 85%;
+    }
+
+    .text-card:first-of-type {          
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .featured-work {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    } 
+  
+/*  Specification of the text properties. */
+
+    blockquote {
+        font: 300 italic 25px "Raleway", sans-serif;
+        padding: 0 17px;
+        margin: 30px 0 20px 0;
+    }
+   
+    .author {
+        font: 300 18px "Lato", sans-serif;
+        text-align: right;
+    }
+
+    h1 {
+        font-size: 35px;
+        margin-top: 32px; 
+    }
+    
+    .professional-career {
+        font-size: 16px;
+    }
+    
+    h2 {
+        font: 300 30px "Lato", sans-serif;
+        margin-left: 0;      
+    }
+ 
+    .bottom-container p {
+        font: 300 18px Lato, sans-serif;
+        padding-top: 2px; 
+    }
+}
+
+@media screen and (max-width: 1100px){
+
+    .container,
+    main,
+    .up {        
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .card:first-of-type {
+        margin: 20px 0;
+    }
+    
+    figure {        
+        box-shadow: none;
+    }
+
+    figure:hover {
+        box-shadow:none;
+    }
+
+    main,
+   .up,
+   .bottom-container {        
+        padding: 0 15px;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
