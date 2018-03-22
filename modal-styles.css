@@ -1,0 +1,203 @@
+/*   For all browsers
+ */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+/*
+*/
+
+/*
+*   For preventing adjustments of font size after 
+*   orientation changes in IE and iOS.
+*    ===========================================
+*/
+
+html {
+    font-family: "News Cycle", sans-serif;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+}
+
+/*  
+*/
+
+#curriculum {
+    z-index: 2;
+    display: none;
+}
+
+.modal-collapse {
+    width: 700px;
+    max-width: 100%;
+    font-family: "News Cycle", sans-serif;
+    line-height: 1.42857143;
+    color: #2f4f4f;
+    background-color: #fffff0;
+    margin: 70px 0;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/*
+*   Header: Name, professional information and photo.
+*/
+
+.modal-header {
+    display: flex;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.professional-information {
+    margin: 20px 0 20px 45px;
+    width: 75%;
+    text-align: left;
+}
+
+.name {
+    margin: 15px 0  0 0;
+    font: 400 1.2em "News Cycle", sans-serif; 
+}
+
+.career {
+    font: 400 1em "News Cycle", sans-serif; 
+    margin: 0;
+}
+
+.modal-photo {
+     margin: 20px 0 20px 70px;
+     width: 25%;
+}
+
+.face-photo {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+*   Main: with the CV.
+*/
+
+#modal-main {
+    padding: 20px 45px;
+}
+
+ul {
+    list-style-type: square; 
+    font: 400 0.9em "News Cycle", sans-serif;
+    text-align: justify;
+    margin: 0;
+}
+
+/*  Tittle of the sections. */
+
+#modal-main p {
+    font: 700 0.9em "News Cycle", sans-serif;
+    padding-left: 40px;
+    text-align: justify;
+    margin: 0;
+}
+
+#modal-main .current-course {
+    font: 400 0.9em "News Cycle", sans-serif;
+    padding-left: 0;
+}
+
+/*  To indicate the next degree to add to the CV. */
+ 
+#modal-main span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #32cd32;
+    margin: 2px 10px 2px 20px;
+}
+
+/* To add a link that leads to the University page. */
+
+#modal-main a {
+   outline: none;
+   font: 700 1em "News Cycle", sans-serif; 
+   color: #696969;
+}
+
+/* Color on mouse-over */
+
+#modal-main a:hover {
+    color: #ff7f50;    
+}
+
+/*
+*   Footer  
+*/
+
+.modal-footer {
+    text-align: right;
+    background-color: #696969;
+    padding: 15px;
+    border-top: 1px solid #e5e5e5;
+    border-radius: 0 0 4px 4px;    
+}
+
+/* TODO: Button effects */
+   
+.button {
+    width: 80px;
+    color: #2f4f4f;
+    font: 400 0.8em "News Cycle", sans-serif; 
+    text-align: center;
+    background-color: #fffff0; 
+    border: 0;
+    border-radius: 5px;
+    padding: 0 0 2px 0;
+    margin-right: 5px;
+    cursor: pointer; 
+    -webkit-appearance: button;     
+}
+
+.button:hover {
+    background-color: #ff7f50; 
+    border-radius: 5px; 
+    color: #fffff0;
+    -webkit-appearance: button;      
+}
+
+.open-drawer {
+        margin: 70px 70px 0 70px;  
+        box-shadow: 0px 2px 5px #c0c0c0;
+        width: 110px;      
+    }
+
+
+
+
+@media screen and (max-width: 450px){
+
+    .modal-photo {
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+
+    #modal-main {
+        padding: 20px 20px 20px 0;
+    }
+
+    .professional-information {
+        margin-left: 20px;
+    } 
+    .name {
+        margin-top: 5px;
+    }
+
+    #modal-main .current-course {
+        padding-left: 40px;
+    }
+
+    #modal-main span {    
+        margin: 2px 9px 2px -17px;
+    }
+}
