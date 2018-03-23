@@ -475,7 +475,7 @@ h2 {
     }
     
     blockquote:last-of-type {
-       margin-bottom: 50px;
+        margin-bottom: 50px;
     }
 }
 
@@ -557,10 +557,14 @@ h2 {
 
 /*  Specification of the text properties. */
 
-     blockquote {
+    blockquote {
         font: 400 22px "Raleway", sans-serif;
         padding: 0 12px;
         margin: 30px 0 20px 0;
+    }
+    
+    blockquote:last-of-type {
+        margin-bottom: 50px;
     }
     
     .author {
