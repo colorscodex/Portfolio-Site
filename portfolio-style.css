@@ -473,10 +473,6 @@ h2 {
     em {
        font: italic 400 18px "News Cycle", sans-serif;
     }
-    
-    blockquote:last-of-type {
-        margin-bottom: 50px;
-    }
 }
 
 /*
@@ -561,10 +557,6 @@ h2 {
         font: 400 22px "Raleway", sans-serif;
         padding: 0 12px;
         margin: 30px 0 20px 0;
-    }
-    
-    blockquote:last-of-type {
-        margin-bottom: 50px;
     }
     
     .author {
@@ -706,12 +698,17 @@ h2 {
    .bottom-container {        
         padding: 0 15px;
     }
+    
     .up {
         padding: 0 20px;
     }
 
     hr {
         margin: 10px 0;
+    }
+    
+    blockquote:last-of-type {
+        margin-bottom: 50px;
     }
 }
 
