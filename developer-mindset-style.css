@@ -116,11 +116,8 @@ article {
     width: 100%;  
     text-align: justify;
     margin: 0;
-    padding: 0 100px;    
-}
-
-hr {
-    border: 4px double #000080;
+    padding: 0 100px; 
+    border-bottom: 4px double #000080;
 }
 
 /*
