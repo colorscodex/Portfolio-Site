@@ -461,7 +461,7 @@ h2 {
 @media screen and (max-width: 450px){
 
 .text-card {    
-        font: 400 20px "News Cycle", sans-serif;
+        font: 400 18px "News Cycle", sans-serif;
         margin-left: 0;   
         text-align: center;
     }
@@ -471,7 +471,11 @@ h2 {
     }
 
     em {
-       font: italic 400 20px "News Cycle", sans-serif;
+       font: italic 400 18px "News Cycle", sans-serif;
+    }
+    
+    blockquote:last-of-type {
+       margin-bottom: 50px;
     }
 }
 
@@ -554,7 +558,7 @@ h2 {
 /*  Specification of the text properties. */
 
      blockquote {
-        font: 400 20px "Raleway", sans-serif;
+        font: 400 22px "Raleway", sans-serif;
         padding: 0 12px;
         margin: 30px 0 20px 0;
     }
