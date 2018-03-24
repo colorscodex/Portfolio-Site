@@ -633,7 +633,7 @@ h2 {
 
     .featured-work {
         padding-bottom: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
     } 
   
 /*  Specification of the text properties. */
@@ -708,7 +708,7 @@ h2 {
     }
     
     blockquote:last-of-type {
-        margin-bottom: 50px;
+        margin-bottom: 0 0 100px 0;
     }
 }
 
