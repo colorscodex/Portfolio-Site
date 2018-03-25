@@ -176,7 +176,7 @@ hr {
 .featured-work {
     border-bottom: 2px solid #696969; 
     padding-bottom: 20px;
-    margin-bottom: 100px;  
+    margin-bottom: 0;  
 }
 
 /*  To close the page with a desing and a date. */
@@ -318,7 +318,7 @@ blockquote {
     -moz-text-align-last: center;
     -webkit-text-align-last: center;
     -ms-text-align-last: center;
-    margin: 100px 200px 70px 200px;
+    margin: 100px 200px;
 }
 
 .author {
@@ -338,7 +338,7 @@ h2 {
     text-transform: capitalize; 
     letter-spacing: 2px;  
     color:  #2f4f4f;
-    margin: 30px 0 0 10px;
+    margin: 0 0 0 10px;
 }
 
 .professional-career {
@@ -460,7 +460,7 @@ h2 {
  
 @media screen and (max-width: 450px){
 
-.text-card {    
+    .text-card {    
         font: 400 18px "News Cycle", sans-serif;
         margin-left: 0;   
         text-align: center;
@@ -523,9 +523,8 @@ h2 {
     .featured-work {         
         text-align: center;
         float: none;
-        margin-top: 85px 0 20px 0;
     }
-
+    
     .card {
        display: block;
     }
@@ -556,7 +555,7 @@ h2 {
     blockquote {
         font: 400 22px "Raleway", sans-serif;
         padding: 0 12px;
-        margin: 30px 0 20px 0;
+        margin: 30px 0;
     }
     
     .author {
@@ -585,7 +584,7 @@ h2 {
 
     h2 {
         font: 300 25px "Lato", sans-serif;
-        margin: 10px 0 30px 0;
+        margin: 0 0 30px 0;
     }
     
     h3 {
@@ -633,7 +632,6 @@ h2 {
 
     .featured-work {
         padding-bottom: 20px;
-        margin-bottom: 100px;
     } 
   
 /*  Specification of the text properties. */
@@ -641,7 +639,6 @@ h2 {
     blockquote {
         font: 300 italic 25px "Raleway", sans-serif;
         padding: 0 17px;
-        margin: 30px 0 20px 0;
     }
    
     .author {
@@ -705,10 +702,6 @@ h2 {
 
     hr {
         margin: 10px 0;
-    }
-    
-    blockquote:last-of-type {
-        margin: 0 0 100px 0;
     }
 }
 
