@@ -313,6 +313,10 @@ blockquote {
     margin: 100px 200px;
 }
 
+.between-projects {
+    margin: 200px 200px;;
+}
+
 .author {
     font: 300 20px "Lato", sans-serif;
     margin-bottom: 0;
@@ -557,6 +561,10 @@ h2 {
         margin: 80px 0;
     }
     
+    .between-projects {
+        margin: 100px 0;
+    }
+    
     .author {
         font: 300 16px "Lato", sans-serif;
         text-align: right;
@@ -635,6 +643,10 @@ h2 {
         font: 300 italic 25px "Raleway", sans-serif;
         padding: 0 17px;
         margin: 100px 0;        
+    }
+    
+    .between-projects {
+        margin: 80px 0 100px 0;
     }
    
     .author {
