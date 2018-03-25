@@ -558,11 +558,11 @@ h2 {
     blockquote {
         font: 400 22px "Raleway", sans-serif;
         padding: 0 12px;
-        margin: 80px 0;
+        margin: 100px 0;
     }
     
     .between-projects {
-        margin: 100px 0;
+        margin: 110px 0;
     }
     
     .author {
@@ -645,7 +645,7 @@ h2 {
     }
     
     .between-projects {
-        margin: 100px 0 120px 0;
+        margin: 120px 0 120px 0;
     }
    
     .author {
