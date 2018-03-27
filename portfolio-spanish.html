@@ -14,6 +14,10 @@
 		
 		<link rel="alternate" href="portfolio-english.html">
 		
+		<!-- For JavaScript file> -->
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+		
 		<!-- Font-family -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:200,300i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
@@ -28,12 +32,11 @@
 		<nav>
 			<ul class="navbar-list">
 				
-				<!-- To control (show/hide) the collapsible content, add the data-toggle="modal-collapse" attribute to a <span> element and add the data-target="#curriculum" attribute to connect the span type button with the collapsible content (<div id="curriculum">).-->
+				<!-- To control (show/hide) the collapsible content, add the data-toggle="modal-collapse" attribute to a <button> element and add the data-target="#curriculum" attribute to connect the button type button with the collapsible content (<div id="curriculum">).-->
 				
-				<li class="cv-button"><button type="button" id="open-drawer"
-                     onclick="document.getElementById('curriculum').style.display='block'"
-                     data-toggle="modal-collapse"
-                     data-target="#curriculum">☰ CV</button></li>
+				<li class="cv-button">
+					<button type="button" id="open-drawer" data-toggle="modal-collapse" data-target="#curriculum">☰ CV</button>
+				</li>
 				
 				<li class="language"><a target="_self" href="portfolio-english.html">Inglés</a></li>
 			</ul>
@@ -202,9 +205,12 @@
 			
 			<!-- To close the drawer. -->
 			<div class="modal-footer">
-				<button class="button" type="button" onclick="document.getElementById('curriculum').style.display='none'">Cerrar</button>
+				<button class="button" id="close-drawer">Cerrar</button>
 			</div>
 		</div>
+		
+		<script src="js/design.js"></script>
+
 	</body>
 </html>
 
