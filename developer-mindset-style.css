@@ -2,12 +2,14 @@
  *  For all browsers
  */
 
-*{
+
+* {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
 }
+
 
 /*
  *   For preventing adjustments of font size after 
@@ -15,11 +17,13 @@
  *   =============================================
  */
 
+
 html {
     font-family: "Open sans", sans-serif;
     -ms-text-size-adjust: 100%; 
     -webkit-text-size-adjust: 100%;
 }
+
 
 /*  In common */
 /*
@@ -28,20 +32,24 @@ html {
  *  ===============================================
  */
 
+
 .up,
 .colors-page {
     -webkit-flex: flex;
     display: flex;
 }
 
+
 /*  
 */
+
 
 html, 
 body {
     margin: 0;
     padding: 0;
 }
+
 
 body {
     font-family: "Open sans", sans-serif;    
@@ -51,12 +59,14 @@ body {
     z-index: -1;
 }
 
+
 /*  
  *  The nav bar has a background made with a pixel (5*5)
  *  and depth effect.
  *  ====================================================
  */
 /*  Nav: fixed. */
+
 
 .pixel-image {
     box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
@@ -71,6 +81,7 @@ body {
     right: 0;
 }
 
+
 /* to-do-list */
 
 .navbar-list {
@@ -80,12 +91,16 @@ body {
     color: #696969;
 }
 
+
 .close {
     float: left;
     margin-left: 20px;
 }
 
-/* nav button to go back to the Portfolio. */
+
+/*  TODO: nav button to go back to the Portfolio. 
+    ============================================= */
+
 
 .go-back {
     float: left;
@@ -101,7 +116,9 @@ body {
     text-decoration: none;  
 }
 
+
 /*  When mouse is over link, the button seems moving.  */
+
 
 .go-back:hover {
     box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
@@ -112,6 +129,7 @@ body {
 
 /*  Text area */
 
+
 article {
     width: 100%;  
     text-align: justify;
@@ -120,10 +138,12 @@ article {
     border-bottom: 4px double #000080;
 }
 
+
 /*
  *  Specification of the text properties.
  */
-       
+      
+
 h1 {
     font: 600 35px "Open sans", sans-serif;
     color: #000080;
@@ -131,29 +151,34 @@ h1 {
     text-align: center;
 }
 
+
 /* The "rem" depends on the size of the letter base, 1rem = 16px.  */ 
+
 
 p {
     font: 400 1rem "Open sans", sans-serif;                     
 }
 
+
 p:first-of-type {
     margin-top: -70px;
 }
 
+
 p:last-of-type {
     margin: 40px 0 10px 0;
 }
+
 
 .quote {
     border-left: 4px solid  #000080;
     padding-left: 10px;
 }
 
-/*
- *  A link for going to other pages.
- *  ===================================
- */
+
+/*  TODO: A link for going to other pages.
+    ====================================== */
+
 
 .change-page {
     color: #6495ed;
@@ -162,6 +187,7 @@ p:last-of-type {
     text-decoration: none; 
 }
 
+
 /*  when mouse is over link, change the color  */
 
 .chamge-page:hover {
@@ -169,10 +195,8 @@ p:last-of-type {
     color: #ff7f50;
 }
 
-/*  
- *  TODO: A link for going to the top of the page.
- *  ==============================================
- */
+/*  TODO: A link for going to the top of the page.
+    ============================================== */
 
 
 .up {
@@ -184,12 +208,14 @@ p:last-of-type {
     margin: 10px  auto;
 }
 
+
 .go-top {
     outline: none;
     text-decoration: none;
     color: #ff7f50;
     margin: 0;
 }
+
 
 .fa-arrow {
     color: #ff7f50;
@@ -198,7 +224,9 @@ p:last-of-type {
     text-align: center;     
 }
 
+
 /* Colors used in the page. */
+
 
 .colors-page {
     font: 400 1rem "Open sans", sans-serif;
@@ -207,6 +235,7 @@ p:last-of-type {
     margin: 30px auto;
     padding: 0 100px;
 }
+
 
 .cornsilk,
 .navy,
@@ -218,23 +247,28 @@ p:last-of-type {
     margin: 0 5px;
 }
 
+
 .cornsilk {
     background-color: #fff8dc;
 }
 
+
 .navy {
     background-color: #000080;
 }
+
 
 .cornflowerblue {
     background-color: #6495ed;
     margin-left: 10px;
 }
 
+
 /*  
  *  Layout responsive: for minimizing the text size.
  *  ================================================
  */
+
 
 @media screen and (max-width: 800px){
 
@@ -243,18 +277,22 @@ p:last-of-type {
         margin-bottom: 0;  
     }
    
+    
     p {
         font: 400 16px "Open sans", sans-serif;      
     }
  
+    
     p:first-of-type {
         margin-top: 20px;
     }
 
+    
     .colors-page {
        font-size: 0.8rem;
     }
 
+    
     article,
     .colors-page,
     .up {
@@ -262,11 +300,13 @@ p:last-of-type {
     }
 }
 
+
 @media screen and (min-width: 801px) and (max-width: 999px){
 
     h1 {
         font: 600 33px "Open sans", sans-serif;        
     } 
+    
 
     p:first-of-type {
         margin-top: -30px;
