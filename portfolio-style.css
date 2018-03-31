@@ -560,6 +560,28 @@ h2 {
        font: 400 18px "News Cycle", sans-serif;
        text-align: center;
     }
+    
+    
+    h1 {
+        font: 300 22px "Lato", sans-serif;
+        margin-top: 22px;
+    }
+
+    
+    .professional-career {
+        font-size: 12px;
+    }
+
+    
+/*  Specification of the logo size.  
+    =============================== */
+
+    
+    .logo-image {
+        width: 55%;
+        height: auto;
+        margin-top: 25px;
+    }
 }
 
 
@@ -592,6 +614,28 @@ h2 {
        font: 300 20px "Lato", sans-serif;
        text-align: justify;
     }
+    
+    
+    h1 {
+        font: 300 30px "Lato", sans-serif;
+        margin-top: 23px;
+    }
+    
+
+    .professional-career {
+        font-size: 14px;
+    }
+    
+    
+/*  Specification of the logo size.
+    =============================== */
+
+    
+    .logo-image {
+        width: 65%;
+        height: auto;
+        margin-top: 23px;
+    }   
 }
 
 
@@ -629,16 +673,8 @@ h2 {
 
     
 /*  Specification of the images size.
-    ================================= */
-    
-
-    .logo-image {
-        width: 55%;
-        height: auto;
-        margin-top: 25px;
-    }
-
-    
+    ================================= 
+*/
 /*  
  *  With a value for max-width, for scaling down if it has to,
  *  but never scale up to be larger than its original size.
@@ -685,17 +721,6 @@ h2 {
     }
  
     
-    h1 {
-        font: 300 22px "Lato", sans-serif;
-        margin-top: 22px;
-    }
-
-    
-    .professional-career {
-        font-size: 14px;
-    }
-
-    
     h2 {
         font: 300 25px "Lato", sans-serif;
         margin: 0 0 30px 0;
@@ -719,6 +744,7 @@ h2 {
         padding-top: 2px; 
     }
 }
+
 
 @media screen and (min-width: 801px) and (max-width: 1100px){
 
