@@ -200,9 +200,8 @@ p:last-of-type {
 
 
 .up {
-    font: 400 0.8rem "Open sans", sans-serif;  
+    font-size: 20px;
     justify-content: flex-end;
-    font-size: 16px;
     width: 100%;
     padding: 0 100px;
     margin: 10px  auto;
