@@ -313,11 +313,11 @@ figure:hover {
 /*  Rotate an image
     ==================*/
 
-/* class for the section */
+/* class for the title of the section */
 
 
 .img-rotate {
-    margin: 150px 0;
+    margin: 150px 0 60px 0;
 }
 
 
@@ -343,7 +343,7 @@ figure:hover {
     margin: 0px;
 }
 
-*   front class with the image and back class with text.
+/*   front class with the image and back class with text.
     ==================================================== */
 
 
