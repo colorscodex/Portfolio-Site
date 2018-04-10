@@ -23,3 +23,17 @@ function close () {
 }
 
 y.addEventListener ("click", close);
+
+/*	
+	For rotating an image.
+	====================== 
+*/
+/*	jQuery: .toggleClass(className)  for adding or removing one or more classes from each element. 
+	============================================================================================== */
+
+$( "#rotation" ).click(function(e) {
+	
+	e.preventDefault();
+	$( this ).toggleClass( "open");
+
+});
