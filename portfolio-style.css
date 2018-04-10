@@ -317,7 +317,7 @@ figure:hover {
 
 
 .img-rotate {
-    margin: 100px 0 40px 0;
+    margin: 100px 0 30px 0;
 }
 
 
@@ -349,7 +349,6 @@ figure:hover {
 
 .back, 
 .front {
-    /*box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);*/
     box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;               
     -webkit-transform-style: preserve-3d; /* Safari */
@@ -649,11 +648,6 @@ h2 {
     .professional-career {
         font-size: 12px;
     }
-
-    
-    .paragraph {        
-        margin: 48px 10px 0 10px;
-    }
     
     
 /*  Specification of the logo size.  
@@ -664,14 +658,6 @@ h2 {
         width: 60%;
         height: auto;
         margin-top: 27px;
-    }
-    
-    
-    #rotation,
-    .back {
-        width: 300px;
-        height: 300px;    
-        margin: auto;     
     }
 }
 
@@ -718,11 +704,6 @@ h2 {
     }
     
     
-    .paragraph {        
-        margin: 122px 10px 0 10px;
-    }
-    
-    
 /*  Specification of the logo size.
     =============================== */
 
@@ -732,14 +713,6 @@ h2 {
         height: auto;
         margin-top: 23px;
     } 
-    
-    
-    #rotation,
-    .back {
-        width: 400px; 
-        height: 400px;    
-        margin: auto;     
-    }
 }
 
 
@@ -790,7 +763,15 @@ h2 {
         max-width: 500px;
         margin: auto;     
     }
-
+    
+    
+    #rotation,
+    .back {
+        width: 300px;
+        height: 300px;    
+        margin: auto;     
+    }
+    
     
 /*  Specification of the text properties. 
     ==================================== */
@@ -847,7 +828,10 @@ h2 {
         margin: 40px 0 0 0;
     }
     
-    
+    .paragraph {        
+        margin: 48px 10px 0 10px;
+    }
+       
     .bottom-container p {
         font: 300 14px "Lato", sans-serif;
         padding-top: 2px; 
@@ -889,6 +873,13 @@ h2 {
         margin-top: 0;
         padding-top: 0;
     }
+    
+    #rotation,
+    .back {
+        width: 350px;
+        height: 350px;    
+        margin: auto;     
+    }
   
     
 /*  Specification of the text properties. 
@@ -929,8 +920,19 @@ h2 {
     }
     
     
+    .img-rotate {
+        margin: 100px 0 0 0;
+        text-transform: none;
+    }
+    
+    
     .comments {
        text-align: justify;
+    }
+    
+    
+    .paragraph {        
+        margin: 92px 10px 0 10px;
     }
     
  
