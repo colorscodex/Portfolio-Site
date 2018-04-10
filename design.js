@@ -1,6 +1,6 @@
 /*
-    For creating an event listener:
-    ===============================
+	For creating an event listener:
+	===============================
 
 	1- <event-target>: It is the element with id="open-drawer/close-drawer 
 	Store inside a variable called x/y using the method document.getElementById(). 
