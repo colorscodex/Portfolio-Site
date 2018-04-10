@@ -216,7 +216,7 @@ hr {
  *  ===========================================
  */
 /*   
- *  TODO: add a item action to visit other 
+ *  TODO: add an item action to visit other 
  *  important documents.
  *  ===========================================
  */
@@ -310,6 +310,78 @@ figure:hover {
 }
 
 
+/*  Rotate an image
+    ==================*/
+
+/* class for the section */
+
+
+.img-rotate {
+    margin: 150px 0;
+}
+
+
+/*  class for the div with the description for resizing. */
+
+
+.new-dimension {
+    margin-left: 75px;
+}
+
+
+/*  class for the div with the image */
+
+
+#rotation {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    background-image: url("../alembic.jpg"); 
+    background-repeat: no-repeat;   
+    background-color: #fffff0;
+    cursor: pointer;
+    margin: 0px;
+}
+
+*   front class with the image and back class with text.
+    ==================================================== */
+
+
+.back, 
+.front {
+    /*box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);*/
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;               
+    -webkit-transform-style: preserve-3d; /* Safari */
+    transition: transform 2s;
+}  
+
+
+.front {
+    backface-visibility: hidden;
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0); /* Safari */
+}
+
+
+.back {
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari */
+}
+
+
+/*  A class for using with .toggleClass method.
+    =========================================== */
+
+
+.open {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari */
+}
+
 /*  Specification of the text properties.
     ===================================== */
 
@@ -381,6 +453,12 @@ blockquote {
 .author {
     font: 300 20px "Lato", sans-serif;
     margin-bottom: 0;
+}
+
+
+.paragraph {
+    font: 300 italic 20px "Raleway", sans-serif;
+    margin: 120px 10px 0 10px;
 }
 
 
@@ -573,6 +651,11 @@ h2 {
     }
 
     
+    .paragraph {        
+        margin: 48px 10px 0 10px;
+    }
+    
+    
 /*  Specification of the logo size.  
     =============================== */
 
@@ -581,6 +664,14 @@ h2 {
         width: 60%;
         height: auto;
         margin-top: 27px;
+    }
+    
+    
+    #rotation,
+    .back {
+        width: 300px;
+        height: 300px;    
+        margin: auto;     
     }
 }
 
@@ -627,6 +718,11 @@ h2 {
     }
     
     
+    .paragraph {        
+        margin: 122px 10px 0 10px;
+    }
+    
+    
 /*  Specification of the logo size.
     =============================== */
 
@@ -635,7 +731,15 @@ h2 {
         width: 65%;
         height: auto;
         margin-top: 23px;
-    }   
+    } 
+    
+    
+    #rotation,
+    .back {
+        width: 400px; 
+        height: 400px;    
+        margin: auto;     
+    }
 }
 
 
@@ -739,6 +843,11 @@ h2 {
     }
     
     
+    .new-dimension {
+        margin: 40px 0 0 0;
+    }
+    
+    
     .bottom-container p {
         font: 300 14px "Lato", sans-serif;
         padding-top: 2px; 
@@ -770,7 +879,11 @@ h2 {
         display: block;
         width: 85%;
     }
-
+    
+    
+    .new-dimension {
+        margin: 60px 0 10px 0;
+    }
     
     .description:first-of-type {          
         margin-top: 0;
@@ -795,7 +908,7 @@ h2 {
    
     
     .author {
-        font: 300 18px "Lato", sans-serif;
+        font: 300 20px "Lato", sans-serif;
     }
 
     
