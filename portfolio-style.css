@@ -358,6 +358,7 @@ figure:hover {
 
 .front {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;  /* Chrome, Safari, Opera */
     transform: rotateY(0);
     -webkit-transform: rotateY(0); /* Safari */
 }
@@ -367,6 +368,7 @@ figure:hover {
     width: 400px;
     height: 400px;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;  /* Chrome, Safari, Opera */
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /* Safari */
 }
