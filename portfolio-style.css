@@ -318,6 +318,14 @@ figure:hover {
 
 .img-rotate {
     margin: 100px 0 30px 0;
+    text-transform: none;
+}
+
+
+/*  class for the div card with alembibic image */
+
+.img-alembic {
+    margin: 0 0 150px 0;
 }
 
 
@@ -325,7 +333,7 @@ figure:hover {
 
 
 .new-dimension {
-    margin-left: 75px;
+    margin: 20px 0 0 75px;
 }
 
 
@@ -345,7 +353,7 @@ figure:hover {
 
 /*   front class with the image and back class with text.
     ==================================================== */
-/*  -webkit-  Safari*/
+/*  -webkit-  Safari */
 
 .back, 
 .front {
@@ -812,6 +820,11 @@ h2 {
     h2 {
         font: 300 25px "Lato", sans-serif;
         margin: 0 0 30px 0;
+    }
+    
+    .img-rotate {
+        margin: 50px 0 20px 0;
+        text-transform: none;
     }
   
     
