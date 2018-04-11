@@ -46,7 +46,7 @@ header,
 
 /*
     -webkit-justify-content: center 
-    as an alternative for the propertie justify-content
+    as an alternative for the property justify-content
     for Safari 6.1 (and newer).         
  */
 
@@ -345,14 +345,15 @@ figure:hover {
 
 /*   front class with the image and back class with text.
     ==================================================== */
-
+/*  -webkit-  Safari*/
 
 .back, 
 .front {
     box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;               
-    -webkit-transform-style: preserve-3d; /* Safari */
+    -webkit-transform-style: preserve-3d; 
     transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s;
 }  
 
 
