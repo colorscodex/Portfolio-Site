@@ -860,7 +860,8 @@ h2 {
     }
 
     .comments {
-       text-align: justify;
+		text-align: justify;
+		margin-top: 50px; 
     }
 
     .paragraph {        
