@@ -331,7 +331,7 @@ figure:hover {
     background-color: #ff7f50; 
     border: none;
     color: #fffff0;
-    padding: 10px 2px;
+    padding: 12.5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -833,7 +833,7 @@ h2 {
    
     .author {
         font: 300 20px "Lato", sans-serif;
-        text-align: right;
+        text-align: center;
     }
 
     h1 {
