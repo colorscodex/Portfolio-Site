@@ -279,7 +279,7 @@ figure:hover {
     width: 400px;
     height: 400px;
     display: flex;
-    background-image: url("../images/portfolio/alembic.jpg"); 
+    background-image: url("alembic.jpg"); 
     background-repeat: no-repeat;   
     background-color: #fffff0;
     cursor: pointer;
