@@ -1,21 +1,18 @@
 /*  For all browsers
  */
 
-
-* {
+*{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
 }
 
-
 /*
  *   For preventing adjustments of font size after 
  *   orientation changes in IE and iOS.
- *   =============================================
+ *   ===========================================
  */
-
 
 html {
     font-family: "News Cycle", sans-serif;
@@ -23,14 +20,12 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-
 /*  In common */
 /*
-    display: -webkit-flex as an alternative 
-    for display: flex for Safari.
-    ===============================================
+ *  display: -webkit-flex as an alternative 
+ *  for display: flex for Safari.
+ *  ===============================================
  */
-
 
 nav,
 .navbar-list,
@@ -43,13 +38,12 @@ header,
     display: flex;
 }
 
-
 /*
-    -webkit-justify-content: center 
-    as an alternative for the property justify-content
-    for Safari 6.1 (and newer).         
+ *  -webkit-justify-content: center 
+ *  as an alternative for the property justify-content
+ *  for Safari 6.1 (and newer).
+ *         
  */
-
 
 .colors-page,
 .card,
@@ -58,10 +52,8 @@ section {
     -webkit-justify-content: center;
 }
 
-
 /*  
  */
-
 
 html, 
 body {
@@ -69,13 +61,11 @@ body {
     padding: 0;
 }
 
-
 body {
     font-family: "Lato", sans-serif;    
     width: 100%;
     background-color: #fffff0;
 }
-
 
 .container {
     width: 100%;
@@ -85,10 +75,7 @@ body {
     margin: 0 auto;  
 }
 
-
-/*  Nav: fixed. 
-    ========== */
-
+/*  Nav: fixed. */
 
 nav {
     position: fixed;
@@ -100,26 +87,11 @@ nav {
     background-color: #696969;
     z-index: 10;
     box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);  
 }
-
-
-.navbar-list {
-    list-style-type: none;
-    padding: 0;    
-    width: 100%;
-    margin-top: 20px;
-}
-
-
-.cv-button {
-    float: left;
-    width: 20%;
-    margin-left: 20px;
-}
-
 
 /*  TODO: Button to oppen the modal-collapse with the CV. */
-
 
 #open-drawer {
     width: 80px;
@@ -132,15 +104,25 @@ nav {
     padding: 0 0 2px 0;
 }
 
-
 #open-drawer:hover {
     text-decoration: none;
     color:  #ff7f50;
 }
 
+.navbar-list {
+    list-style-type: none;
+    padding: 0;    
+    width: 100%;
+    margin-top: 20px;
+}
 
-/*  TODO: A link to change the page. */
+.cv-button {
+    float: left;
+    width: 20%;
+    margin-left: 20px;
+}
 
+/*  A link to change the page. */
 
 .language {
     float: right;
@@ -151,10 +133,7 @@ nav {
     text-align: right;
 }
 
-
-/*  General specifications. 
-    ====================== */ 
-
+/*  General specifications. */ 
 
 hr,
 h2,
@@ -165,27 +144,22 @@ header,
     float: left;
 }
 
-
 header,
 section,
 .bottom-container {
     flex-wrap: wrap;
 }
 
-
 /*  Header */
-
 
 header {
     margin-top: 70px;   
 }
 
-
 .logo-box {
     width: 30%;
     height: 124px;   
 }
-
 
 .personal-information {
     width: 70%;
@@ -193,22 +167,18 @@ header {
     text-align: right;   
 }
 
-
 hr {
     border: 1.2px solid #696969;
     margin: 20px 0;
 }
 
-
 /*  Footer */
 /*  To close the page with a desing and a date. */
-
 
 .bottom-container {
     justify-content: flex-end; 
     color:  #2f4f4f;     
 }
-
 
 /*  
  *  I use cards for marking up the photos 
@@ -221,7 +191,6 @@ hr {
  *  ===========================================
  */
 
-
 .card {
     width: 100%;    
     background-color: #fffff0;
@@ -230,29 +199,20 @@ hr {
     border-radius: 4px;
 }
 
-
 /*  TODO: the image of the card is an item-action. */
-
 
 .card-action:hover {
     text-decoration: none;
 }
 
-
-/*  TODO: class for the links of fa-bars */
-
-
 .card-action {
     outline: none;
-    font: 400 30px Lato, sans-serif;
+    font: 400 35px Lato, sans-serif;
     color: #696969;
     cursor: pointer;
 }
 
-
-/*  TODO: class for the links contained in the paragraphs 
-    for speciphic projescts. */
-
+/*  A link for speciphic projescts. */
 
 .link {
     outline: none;
@@ -260,9 +220,7 @@ hr {
     color: #000080;
 }
 
-
-/*  TODO: For the text of the card and of the language in the nav. */
-
+/*  For the text of the card and of the language in the nav. */
 
 a {
     outline: none;
@@ -270,37 +228,34 @@ a {
     color: #fffff0;
 }
 
-
 /*  Wwhen mouse is over link, change the color. */
-
 
 a:hover {
     text-decoration: none;
     color: #ff7f50;
 }
 
-
 /*  Position and center the image to scale nicely on all screens. */
-
 
 figure {
      box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+     -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
      margin: 0;
      padding: 0;
 }
 
-
 figure:hover {
     text-decoration: none;
     box-shadow: 0px 2px 5px #c0c0c0;
+    -webkit-box-shadow: 0px 2px 5px #c0c0c0;
+    -moz-box-shadow: 0px 2px 5px #c0c0c0;
 }
-
 
 /*  
  *  With max-width, for scaling down if it has to,
  *  but never scale up to be larger than its original size.
  */
-
 
 .image-card {
     max-width: 100%;
@@ -315,55 +270,36 @@ figure:hover {
 
 /* class for the title of the section */
 
-
 .img-rotate {
     margin: 100px 0 30px 0;
     text-transform: none;
 }
 
-
-/*  class for the div card with alembibic image */
-
-.img-alembic {
-    margin: 0 0 150px 0;
-}
-
-
-/*  class for the div with the description for resizing. */
-
-
-.new-dimension {
-    margin: 20px 0 0 75px;
-}
-
-
 /*  class for the div with the image */
-
 
 #rotation {
     width: 400px;
     height: 400px;
     display: flex;
-    background-image: url("alembic.jpg"); 
+    background-image: url("../images/portfolio/alembic.jpg"); 
     background-repeat: no-repeat;   
     background-color: #fffff0;
     cursor: pointer;
     margin: 0px;
 }
 
-/*   front class with the image and back class with text.
+/*  front class with the image and back class with text.
     ==================================================== */
-/*  -webkit-  Safari */
 
 .back, 
 .front {
     box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;               
-    -webkit-transform-style: preserve-3d; 
+    -webkit-transform-style: preserve-3d; /* Safari */
     transition: transform 2s;
     -webkit-transition: -webkit-transform 2s;
-}  
 
+}  
 
 .front {
     backface-visibility: hidden;
@@ -371,7 +307,6 @@ figure:hover {
     transform: rotateY(0);
     -webkit-transform: rotateY(0); /* Safari */
 }
-
 
 .back {
     width: 400px;
@@ -382,19 +317,45 @@ figure:hover {
     -webkit-transform: rotateY(180deg); /* Safari */
 }
 
+.alembic {
+    margin-left: 20px;
+}
 
 /*  A class for using with .toggleClass method.
     =========================================== */
 
-
-.open {
+.rot-image {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /* Safari */
 }
 
-/*  Specification of the text properties.
-    ===================================== */
+#reset-alembic {
+    float: right;
+    background-color: #ff7f50; 
+    border: none;
+    color: #fffff0;
+    padding: 10px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
+    -webkit-box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
+    -moz-box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
+} 
 
+#reset-alembic:hover {
+    background-color: #4b0082;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px #c0c0c0;
+    -webkit-box-shadow: 0px 2px 5px #c0c0c0;
+    -moz-box-shadow: 0px 2px 5px #c0c0c0;
+}
+
+/*  Specification of the text properties.*/
 
 h3 {
     font: 300 30px "Lato", sans-serif;
@@ -403,12 +364,10 @@ h3 {
     text-transform: capitalize; 
 }
 
-
 .about-image {        
     display: block;
     width: 60%;
 }
-
 
 .description {    
     font: 300 22px "Lato", sans-serif;
@@ -419,14 +378,17 @@ h3 {
     margin-left: 20px;    
 }
 
+.note {
+    font: 300 16px "Lato", sans-serif;
+    text-align: right;  
+}
 
 .comments {
     font: 300 22px "Lato", sans-serif;
-    margin: 50px 0;
+    margin: 20px 0 0 0;
     border-left: 4px solid  #2f4f4f;  
     padding-left: 10px;
 }
-
 
 .fa-bars {
     padding-top: 0;
@@ -434,15 +396,14 @@ h3 {
     margin: 0;
 }
 
-
 em {
     font: italic 400 22px "Lato", sans-serif;
 }
 
-
-/*  Specification of the text properties of the page.
-    ================================================= */
-
+/*  
+ *   Specification of the text properties of the page.
+ *   =================================================
+ */
 
 blockquote {
     font: 300 italic 30px "Raleway", sans-serif;
@@ -454,23 +415,15 @@ blockquote {
     margin: 100px 200px;
 }
 
-
-.between-projects {
-    margin: 200px 200px;;
-}
-
-
 .author {
     font: 300 20px "Lato", sans-serif;
     margin-bottom: 0;
 }
 
-
 .paragraph {
     font: 300 italic 20px "Raleway", sans-serif;
     margin: 120px 10px 0 10px;
 }
-
 
 h1 {
     font: 200 50px "Raleway", sans-serif;
@@ -478,7 +431,6 @@ h1 {
     letter-spacing: 2px; 
     margin: 40px 0 0 0;
 }
-
 
 h2 {
     font: 300 35px "Lato", sans-serif;
@@ -488,7 +440,6 @@ h2 {
     margin: 0 0 20px 10px;
 }
 
-
 .professional-career {
     font: 400 20px "Lato", sans-serif;
     letter-spacing: 1px; 
@@ -496,15 +447,12 @@ h2 {
     text-transform: uppercase;
 }
 
-
 .bottom-container p {
     font: 300 20px "Lato", sans-serif; 
     margin: 20px 5px 20px 0;
 }
 
-
 /* Colors used in the page. */
-
 
 .ivory,
 .dim-gray,
@@ -513,45 +461,40 @@ h2 {
     height: 20px;
     vertical-align: middle;
     box-shadow: 0px 2px 5px #c0c0c0;
+    -webkit-box-shadow: 0px 2px 5px #c0c0c0;
+    -moz-box-shadow: 0px 2px 5px #c0c0c0;
     margin: 20px 5px;
 }
-
 
 .ivory {
     background-color: #fffff0;
 }
 
-
 .dim-gray {
     background-color: #696969;
 }
-
 
 .dark-slate-gray {
     background-color: #2f4f4f;
 }
 
+/*  Curriculum card: text properties for the professional information. */
 
-/*  Curriculum card: text properties for the professional information. 
-    ================================================================== */
-
-
-#curriculum  h1{
+#curriculum  h1 {
     font: 400 1.2em "News Cycle", sans-serif;
     text-transform: none;
     color:  #2f4f4f; 
 }
-
 
 #curriculum h2 {
      font: 400 1em "News Cycle", sans-serif; 
      color:  #2f4f4f;
 }
 
-
-/*  Specification of the images size.
-    ================================= */
-
+/*  
+ *  Specification of the images size.
+ *  ===========================================
+ */
 
 .logo-image {
     width: 84px;
@@ -561,12 +504,10 @@ h2 {
     display: block;
 }
 
-
 /*  
  *  With width 100% and height auto for being 
  *  responsive and scale up and down. 
  */
-
 
 .image-main {
     width: 100%;
@@ -576,13 +517,11 @@ h2 {
     display: block;
 }
 
-
 /*  
  *  Specification for the drawer that contains 
  *  the CV.
  *  ===========================================
  */
-
 
 #curriculum {
     position: absolute;
@@ -590,12 +529,10 @@ h2 {
     left: 0; 
 }
 
-
 /*  
  *  TODO: A link for going to the top of the page.
  *  ==============================================
  */
-
 
 .up {
     justify-content: flex-end;
@@ -604,7 +541,6 @@ h2 {
     padding: 20px 5px 10px 0;
     margin: 10px auto;
 }
-
 
 .go-top {
     outline: none;
@@ -616,7 +552,6 @@ h2 {
     margin-left: 10px; 
 }
 
-
 /*  
  *  Layout responsive with two breack points.
  *  ===========================================
@@ -624,74 +559,96 @@ h2 {
  */
 /*  For little screens, it change font-family of the text and centered. */
  
-
 @media screen and (max-width: 450px){
+
+    .container { 
+        margin: 0 auto;       
+        padding: 0;
+    }
 
     .description {    
         font: 400 18px "News Cycle", sans-serif;
         margin-left: 0;   
-        text-align: center;
+        text-align: justify;
     }
 
-    
+    .note {
+        font: 300 14px "Lato", sans-serif;
+        text-align: center;  
+    }
+
     .fa-bars {
        text-align: right;
     }
-    
 
     em {
        font: italic 400 18px "News Cycle", sans-serif;
     }
-    
-    
+
     .comments {
        font: 400 18px "News Cycle", sans-serif;
-       text-align: center;
+       text-align: justify;
     }
-  
-    
+
+
     .logo-box {
         height: 64px; 
         width: 20%;  
     }
 
-    
     .personal-information {       
         height: 64px; 
         width: 80%;       
     }
-    
-    
+
     h1 {
-        font: 300 22px "Lato", sans-serif;
+        font: 300 20px "Lato", sans-serif;
         margin-top: 22px;
     }
 
-    
     .professional-career {
         font-size: 12px;
     }
-    
-    
-/*  Specification of the logo size.  
-    =============================== */
 
+
+    blockquote {
+        font: 400 18px "Raleway", sans-serif;
+        padding: 0;
+        margin: 50px 0;
+    }
     
+    .author {
+        font: 300 14px "Lato", sans-serif;
+    }
+
+    .alembic {
+        margin-left: 15px;
+        padding-left: 0;
+    }
+
+/*  
+ *  Specification of the images size. 
+ *  ==========================================
+ */
+
     .logo-image {
-        width: 42px;
-        height: 42px;
+        width: 40px;
+        height: 40px;
         margin-top: 22px;
     }
 }
-
 
 /*
  *   With this media:  the font family for the text is equal 
  *   for the all page. 
  */
 
-
 @media screen and (min-width: 451px) and (max-width: 800px){
+
+    .container {  
+        margin: 0;      
+        padding: 0 10px;
+    }
 
     .description {    
         font: 300 20px "Lato", sans-serif;
@@ -699,22 +656,24 @@ h2 {
         text-align: justify;
     }
 
-    
+    .note {
+        font: 300 14px "Lato", sans-serif;
+        text-align: right;  
+    }
+
     .fa-bars {
        text-align: right;
     }
 
-    
     em {
        font: italic 400 20px "Lato", sans-serif;
     }
-    
-    
+
     .comments {
        font: 300 20px "Lato", sans-serif;
        text-align: justify;
     }
-    
+
     .logo-box {
         height: 77px; 
         width: 20%;  
@@ -724,293 +683,221 @@ h2 {
         height: 77px; 
         width: 80%;       
     }
-    
-    
+
     h1 {
         font: 300 30px "Lato", sans-serif;
         margin-top: 23px;
     }
-    
 
     .professional-career {
         font-size: 14px;
     }
-    
-    
-/*  Specification of the logo size.
-    =============================== */
 
-    
-    .logo-image {
-        width: 54px;
-        height: 54px;
-        margin-top: 23px;
-    } 
-}
-
-
-/*  Specifications for other elements. */
-
-
-@media screen and (max-width: 800px){
-
-    .container {
-        padding: 0;
-    }
-
-       
-    hr {
-        margin: 10px 0;
-        border: 1px solid #7d97ad;
-    }
-    
-    
-    .card {
-       display: block;
-    }
-
-    
-/*  Specification of the images size.
-    ================================= 
-*/
-/*  
- *  With a value for max-width, for scaling down if it has to,
- *  but never scale up to be larger than its original size.
- */
-    
-    
-    .image-card {
-        width: 100%; 
-        max-width: 500px;
-        margin: auto;     
-    }
-    
-    
-    #rotation,
-    .back {
-        width: 300px;
-        height: 300px;    
-        margin: auto;     
-    }
-    
-    
-/*  Specification of the text properties. 
-    ==================================== */
-
-    
     blockquote {
         font: 400 22px "Raleway", sans-serif;
         padding: 0 12px;
         margin: 100px 0;
     }
-
-    
-    .between-projects {
-        margin: 110px 0;
-    }
-    
     
     .author {
         font: 300 16px "Lato", sans-serif;
     }
 
+/*  
+ *  Specification of the images size. 
+ *  ==========================================
+ */
+
+    .logo-image {
+        width: 54px;
+        height: 54px;
+        margin-top: 23px;
+    }
+}
+
+/*  Specifications for other elements. */
+
+@media screen and (max-width: 800px){
     
+    hr {
+        margin: 10px 0;
+        border: 1px solid #7d97ad;
+    }
+
+    .card {
+       display: block;
+    }
+
+/*  
+ *  With a value for max-width, for scaling down if it has to,
+ *  but never scale up to be larger than its original size.
+ */
+
+    .image-card {
+        width: 100%; 
+        max-width: 500px;
+        margin: auto;     
+    }
+
+    #rotation,
+    .back {
+        width: 300px; 
+        height: 300px;    
+        margin: auto;     
+    }
+
+/*  Specification of the text properties. */
+
     .language {
         font-size: 15px;
         padding: 5px;
     }
    
-    
     .cv-buttom {        
         margin-left: 10px;
         margin-right: 10px;
     }
- 
-    
+
     h2 {
         font: 300 25px "Lato", sans-serif;
-        margin: 0 0 30px 0;
+        margin: 0 0 20px 0;
     }
-    
-    .img-rotate {
-        margin: 50px 0 20px 0;
-        text-transform: none;
-    }
-  
     
     h3 {
         font: 300 20px "Lato", sans-serif;
         margin: 20px 0;
     }
 
-    
+    .img-rotate {
+        margin: 50px 0 20px 0;
+        text-transform: none;
+    }
+
     .about-image {    
         width: 100%;
         padding-top: 0;
     }
-    
-    
-    .new-dimension {
-        margin: 40px 0 0 0;
-    }
-    
+
     .paragraph {        
         margin: 48px 10px 0 10px;
     }
-       
+
     .bottom-container p {
         font: 300 14px "Lato", sans-serif;
         padding-top: 2px; 
     }
 }
 
+@media screen and (min-width: 801px) and (max-width: 1100px){
 
-@media screen and (min-width: 801px) and (max-width: 1150px){
-
-    .logo-box {
-        width: 30%;
-        height: 94px;   
+    .container {  
+        margin: 0 auto;      
+        padding: 0 10px;
     }
 
-    
     .personal-information {
         width: 70%;
-        height: 94px; 
-        text-align: right;   
+        height: 94px;  
     }
-    
+
+    .logo-box {
+        height: 94px; 
+        width: 30%;  
+    }
 
     .logo-image {
         margin-top: 32px;
         width: 62px;
-        height: 62px;
+        height: 62px; 
     }
-    
 
     .about-image {        
         display: block;
         width: 85%;
     }
-    
-    
-    .new-dimension {
-        margin: 60px 0 10px 0;
-    }
-    
+
     .description:first-of-type {          
         margin-top: 0;
         padding-top: 0;
     }
-    
+
     #rotation,
     .back {
-        width: 350px;
+        width: 350px; 
         height: 350px;    
         margin: auto;     
     }
-  
-    
-/*  Specification of the text properties. 
-    ===================================== */
 
-    
+/*  Specification of the text properties. */
+
     blockquote {
         font: 300 italic 25px "Raleway", sans-serif;
         padding: 0 17px;
-        margin: 100px 0;        
-    }
-    
-    
-    .between-projects {
-        margin: 120px 0 120px 0;
+        margin: 100px 0;
     }
    
-    
     .author {
         font: 300 20px "Lato", sans-serif;
+        text-align: right;
     }
 
-    
     h1 {
         font-size: 35px;
         margin-top: 32px; 
     }
     
-    
     .professional-career {
         font-size: 16px;
     }
     
-    
     h2 {
         font: 300 30px "Lato", sans-serif;
-        margin-left: 0;      
+        margin-left: 0;     
     }
-    
-    
-    .img-rotate {
-        margin: 100px 0 0 0;
-        text-transform: none;
-    }
-    
-    
-    .comments {
-       text-align: justify;
-    }
-    
-    
-    .paragraph {        
-        margin: 92px 10px 0 10px;
-    }
-    
- 
+
     .bottom-container p {
         font: 300 18px "Lato", sans-serif;
         padding-top: 2px; 
     }
+
+    .comments {
+       text-align: justify;
+    }
+
+    .paragraph {        
+        margin: 92px 10px 0 10px;
+    }
 }
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1100px){
 
-    .container,
     main,
     .up {        
         margin: 0;
     }
 
-    
     .card {
         width: 100%;
-        margin: 50px 0;
+        margin: 20px 0 0 0;
     }
-
-    
-    .card:first-of-type {
-        margin: 20px 0;
-    }
-    
-    
+   
     figure {        
         box-shadow: none;
     }
-    
 
     figure:hover {
         box-shadow:none;
     }
 
-    
     main,
    .bottom-container {        
         padding: 0 15px;
     }
-    
-    
+
     .up {
         padding: 0 20px;
     }
 
-    
     hr {
         margin: 10px 0;
     }
