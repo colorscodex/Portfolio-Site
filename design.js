@@ -28,12 +28,20 @@ y.addEventListener ("click", close);
 	For rotating an image.
 	====================== 
 */
-/*	jQuery: .toggleClass(className)  for adding or removing one or more classes from each element. 
-	============================================================================================== */
+/*	jQuery: .addClass(className) for adding and removeClass() for removing.
+	======================================================================= */
 
 $( "#rotation" ).click(function(e) {
 	
 	e.preventDefault();
-	$( this ).toggleClass( "open");
+	$( this ).addClass( "rot-image");
 
 });
+
+$( "#reset-alembic" ).click(function(e) {
+
+	e.preventDefault();
+	$("#rotation").removeClass( "rot-image");
+
+});
+
