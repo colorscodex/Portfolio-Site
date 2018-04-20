@@ -772,6 +772,10 @@ h2 {
         width: 100%;
         padding-top: 0;
     }
+    
+    .others {        
+        margin: 50px 0;
+    }
 
     .paragraph {        
         margin: 48px 10px 0 10px;
