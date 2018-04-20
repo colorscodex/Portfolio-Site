@@ -331,7 +331,7 @@ figure:hover {
     background-color: #ff7f50; 
     border: none;
     color: #fffff0;
-    padding: 10px 5px;
+    padding: 12.5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -899,6 +899,10 @@ h2 {
 
     hr {
         margin: 10px 0;
+    }
+    
+    #reset-alembic {
+        padding: 10px 5px;   
     }
 }
 
