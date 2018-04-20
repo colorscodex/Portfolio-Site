@@ -264,10 +264,8 @@ figure:hover {
     display: block;
 }
 
-
 /*  Rotate an image
-    ==================*/
-
+    ================== */
 /* class for the title of the section */
 
 .img-rotate {
@@ -298,7 +296,6 @@ figure:hover {
     -webkit-transform-style: preserve-3d; /* Safari */
     transition: transform 2s;
     -webkit-transition: -webkit-transform 2s;
-
 }  
 
 .front {
@@ -590,7 +587,6 @@ h2 {
        text-align: justify;
     }
 
-
     .logo-box {
         height: 64px; 
         width: 20%;  
@@ -609,7 +605,6 @@ h2 {
     .professional-career {
         font-size: 12px;
     }
-
 
     blockquote {
         font: 400 18px "Raleway", sans-serif;
