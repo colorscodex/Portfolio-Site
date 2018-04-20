@@ -318,8 +318,8 @@ figure:hover {
     margin-left: 20px;
 }
 
-/*  A class for using with .toggleClass method.
-    =========================================== */
+/*  A class for using with .addClass() and .removeClass() method.
+    ============================================================= */
 
 .rot-image {
     transform: rotateY(180deg);
