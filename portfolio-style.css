@@ -20,7 +20,7 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-/*  In common */
+/* In common */
 /*
  *  display: -webkit-flex as an alternative 
  *  for display: flex for Safari.
@@ -34,12 +34,13 @@ header,
 .up,
 .colors-page,
 .card {
-    -webkit-flex: flex;
+    display: -webkit-flex;
     display: flex;
 }
 
 /*
- *  -webkit-justify-content: center 
+ *  The justify-content property aligns the flexible container's items.   
+ *  -webkit-justify-content: space-between
  *  as an alternative for the property justify-content
  *  for Safari 6.1 (and newer).
  *         
@@ -48,8 +49,8 @@ header,
 .colors-page,
 .card,
 section {
-    justify-content: center;
-    -webkit-justify-content: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 /*  
@@ -153,7 +154,7 @@ section,
 /*  Header */
 
 header {
-    margin-top: 70px;   
+    margin-top: 70px; 
 }
 
 .logo-box {
@@ -190,13 +191,20 @@ hr {
  *  important documents.
  *  ===========================================
  */
+ /*
+ *  Align-items property: Center the alignments
+ *  for the two items, one with a image and other with text
+ *  of the flexible <div class="card"> element.
+ */
 
 .card {
     width: 100%;    
     background-color: #fffff0;
     color: #696969;  
-    margin: 30px 0 100px 0;
+    margin: 0 0 100px 0;
     border-radius: 4px;
+    align-items: center;    
+    -webkit-align-items: center;
 }
 
 /*  TODO: the image of the card is an item-action. */
@@ -212,12 +220,12 @@ hr {
     cursor: pointer;
 }
 
-/*  A link for speciphic projescts. */
+/* A link for speciphic projescts. */
 
 .link {
     outline: none;
     text-decoration: underline;
-    color: #000080;
+    color: #4b0082;
 }
 
 /*  For the text of the card and of the language in the nav. */
@@ -228,7 +236,7 @@ a {
     color: #fffff0;
 }
 
-/*  Wwhen mouse is over link, change the color. */
+/* Wwhen mouse is over link, change the color.  */
 
 a:hover {
     text-decoration: none;
@@ -264,29 +272,21 @@ figure:hover {
     display: block;
 }
 
-/*  Rotate an image
+/*  Rotate an image:
     ================== */
-/* class for the title of the section */
-
-.img-rotate {
-    margin: 100px 0 30px 0;
-    text-transform: none;
-}
-
-/*  class for the div with the image */
+/*  class for the div with the image. */
 
 #rotation {
     width: 400px;
     height: 400px;
     display: flex;
-    background-image: url("alembic.jpg"); 
+    background-image: url("../images/portfolio/alembic.jpg"); 
     background-repeat: no-repeat;   
     background-color: #fffff0;
     cursor: pointer;
-    margin: 0px;
 }
 
-/*  front class with the image and back class with text.
+/*  front-class with the image and back-class with text.
     ==================================================== */
 
 .back, 
@@ -314,24 +314,28 @@ figure:hover {
     -webkit-transform: rotateY(180deg); /* Safari */
 }
 
+/*  For the list with the specifications about alembic. */
+
 .alembic {
     margin-left: 20px;
 }
 
-/*  A class for using with .addClass() and .removeClass() method.
-    ============================================================= */
+/*  A class for using with addClass() and removeClass() method.
+    =========================================================== */
 
 .rot-image {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /* Safari */
 }
 
+/*  A span tag type button */
+
 #reset-alembic {
     float: right;
-    background-color: #ff7f50; 
+    background-color: #4b0082; 
     border: none;
     color: #fffff0;
-    padding: 12.5px 5px;
+    padding: 10px 5.25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -345,7 +349,7 @@ figure:hover {
 } 
 
 #reset-alembic:hover {
-    background-color: #4b0082;
+    background-color: #ff7f50;
     text-decoration: none;
     box-shadow: 0px 2px 5px #c0c0c0;
     -webkit-box-shadow: 0px 2px 5px #c0c0c0;
@@ -359,6 +363,11 @@ h3 {
     text-align: center;  
     margin: 30px 0; 
     text-transform: capitalize; 
+}
+
+.title-almbc {
+    text-align: left;  
+    text-transform: none;
 }
 
 .about-image {        
@@ -409,7 +418,11 @@ blockquote {
     -moz-text-align-last: center;
     -webkit-text-align-last: center;
     -ms-text-align-last: center;
-    margin: 100px 200px;
+    margin: 150px 150px;
+}
+
+blockquote:first-of-type {
+    margin:100px;
 }
 
 .author {
@@ -417,9 +430,17 @@ blockquote {
     margin-bottom: 0;
 }
 
-.paragraph {
+.text-almbc {
     font: 300 italic 20px "Raleway", sans-serif;
-    margin: 120px 10px 0 10px;
+    margin-top: 120px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.almbc-author {
+    font: 300 20px "Lato", sans-serif;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 h1 {
@@ -611,6 +632,10 @@ h2 {
         padding: 0;
         margin: 50px 0;
     }
+
+    blockquote:first-of-type {
+        margin: 50px 0;
+    }
     
     .author {
         font: 300 14px "Lato", sans-serif;
@@ -694,6 +719,10 @@ h2 {
         margin: 100px 0;
     }
     
+    blockquote:first-of-type {
+        margin: 100px 0;
+    }
+
     .author {
         font: 300 16px "Lato", sans-serif;
     }
@@ -721,6 +750,7 @@ h2 {
 
     .card {
        display: block;
+       margin: 0 0 50px 0;
     }
 
 /*  
@@ -763,22 +793,22 @@ h2 {
         margin: 20px 0;
     }
 
-    .img-rotate {
-        margin: 50px 0 20px 0;
-        text-transform: none;
-    }
-
     .about-image {    
         width: 100%;
         padding-top: 0;
     }
-    
+
     .others {        
         margin: 50px 0;
     }
 
-    .paragraph {        
-        margin: 48px 10px 0 10px;
+    .text-almbc { 
+        font: 300 italic 18px "Raleway", sans-serif;       
+        margin: 50px 10px 0 10px;
+    }
+
+    .almbc-author { 
+        font-size: 16px;       
     }
 
     .bottom-container p {
@@ -810,9 +840,14 @@ h2 {
         height: 62px; 
     }
 
+    .card {
+        width: 100%;
+        margin: 0 0 100px 0;
+    }
+
     .about-image {        
         display: block;
-        width: 65%;
+        width: 60%;
     }
 
     .description:first-of-type {          
@@ -835,9 +870,22 @@ h2 {
         margin: 100px 0;
     }
    
+    blockquote:first-of-type {
+        margin:100px;
+    }
+
     .author {
         font: 300 20px "Lato", sans-serif;
         text-align: center;
+    }
+
+    .text-almbc {
+        font: 300 italic 20px "Raleway", sans-serif;        
+        margin: 100px 10px 0 10px;
+    }
+
+    .almbc-author { 
+        font-size: 18px;       
     }
 
     h1 {
@@ -860,8 +908,8 @@ h2 {
     }
 
     .comments {
-		text-align: justify;
-		margin-top: 50px; 
+       text-align: justify;
+       margin-top: 50px;
     }
 
     .paragraph {        
@@ -875,16 +923,11 @@ h2 {
     .up {        
         margin: 0;
     }
-
-    .card {
-        width: 100%;
-        margin: 20px 0 0 0;
-    }
-    
+   
     .card-action {
         font-size: 30px;
     }
-   
+
     figure {        
         box-shadow: none;
     }
@@ -894,7 +937,7 @@ h2 {
     }
 
     main,
-   .bottom-container {        
+    .bottom-container {        
         padding: 0 15px;
     }
 
@@ -904,10 +947,6 @@ h2 {
 
     hr {
         margin: 10px 0;
-    }
-    
-    #reset-alembic {
-        padding: 10px 5px;   
     }
 }
 
