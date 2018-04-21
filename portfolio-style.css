@@ -911,10 +911,6 @@ h2 {
        text-align: justify;
        margin-top: 50px;
     }
-
-    .paragraph {        
-        margin: 92px 10px 0 10px;
-    }
 }
 
 @media screen and (max-width: 1100px){
