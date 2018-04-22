@@ -45,7 +45,6 @@ header,
  *  for Safari 6.1 (and newer).
  *         
  */
-
 .colors-page,
 .card,
 section {
@@ -105,9 +104,14 @@ nav {
     padding: 0 0 2px 0;
 }
 
+/*  For creating move with the box-shadow. */
+
 #open-drawer:hover {
     text-decoration: none;
     color:  #ff7f50;
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-list {
