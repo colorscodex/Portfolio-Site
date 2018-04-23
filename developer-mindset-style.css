@@ -32,7 +32,7 @@ html {
  *  ===============================================
  */
 
-
+footer,
 .up,
 .colors-page {
     -webkit-flex: flex;
@@ -121,11 +121,24 @@ body {
 
 
 .go-back:hover {
-    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
     background-color: #fffff0;
     color: #ff7f50;
     text-decoration: none;
 }
+
+
+/*  Contaiener */
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0; 
+}
+
 
 /*  Text area */
 
@@ -224,15 +237,54 @@ p:last-of-type {
 }
 
 
+/*  Footer */
+
+/*
+ *  The justify-content property aligns the flexible container's items.   
+ *  -webkit-justify-content: space-between
+ *  as an alternative for the property justify-content
+ *  for Safari 6.1 (and newer).        
+ *//*
+ *  Align-items property: flex-end the alignments
+ *  for the two items, one with a image and other with text
+ *  of the flexible <footer> element.
+ */
+
+
+footer {
+    background-color: #696969; 
+    justify-content: space-between;
+    align-items: flex-end;
+    -webkit-justify-content: space-between; 
+    -webkit-align-items: flex-end;
+    margin: 0;
+    padding: 30px 100px;
+}
+
+
+.image-footer {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0;
+    display: block;
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Colors used in the page. */
 
 
 .colors-page {
     font: 400 1rem "Open sans", sans-serif;
+    color: #fff8dc;
     width: 100%;
     justify-content: flex-end;
-    margin: 30px auto;
-    padding: 0 100px;
+    -webkit-justify-content: flex-end;
+    margin: 0;
 }
 
 
@@ -242,8 +294,10 @@ p:last-of-type {
     width: 20px;
     height: 20px;
     vertical-align: middle;
-    box-shadow: 0px 2px 5px #c0c0c0;
     margin: 0 5px;
+    box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -270,7 +324,28 @@ p:last-of-type {
 
 
 @media screen and (max-width: 800px){
+    
+    
+    footer {
+        display: block;
+        padding: 20px 15px;
+    }
+    
 
+    .image-footer {
+        margin: 0 auto;
+    }
+
+    
+    .colors-page {
+        font-size: 0.8rem; 
+        width: 100%;
+        margin: 20px auto 0 auto;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    
     h1 {
         font: 600 20px "Open sans", sans-serif;
         margin-bottom: 0;  
@@ -287,13 +362,7 @@ p:last-of-type {
     }
 
     
-    .colors-page {
-       font-size: 0.8rem;
-    }
-
-    
     article,
-    .colors-page,
     .up {
        padding: 0 15px;
     }
@@ -302,6 +371,7 @@ p:last-of-type {
 
 @media screen and (min-width: 801px) and (max-width: 999px){
 
+    
     h1 {
         font: 600 33px "Open sans", sans-serif;        
     } 
