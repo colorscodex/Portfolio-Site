@@ -46,6 +46,8 @@ html {
     margin: 70px 0;
     border-radius: 4px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -187,6 +189,7 @@ ul {
 }
 
 
+.button:focus,
 .button:hover {
     background-color: #ff7f50; 
     border-radius: 5px; 
@@ -195,10 +198,17 @@ ul {
 }
 
 
+.button::-moz-focus-inner {
+    border-style: none;
+}  
+
+
 .open-drawer {
+    width: 110px;
     margin: 70px 70px 0 70px;
     box-shadow: 0px 2px 5px #c0c0c0;
-    width: 110px;
+    -webkit-box-shadow: 0px 2px 5px #c0c0c0;
+    -moz-box-shadow: 0px 2px 5px #c0c0c0;
 }
 
 
