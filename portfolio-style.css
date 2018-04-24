@@ -180,7 +180,7 @@ hr,
 h2,
 main,
 header,
-.bottom-container {
+#bottom-container {
     width: 100%;
     float: left;
 }
