@@ -185,8 +185,7 @@ header {
 }
 
 header,
-section,
-#bottom-container {
+section {
     flex-wrap: wrap;
 }
 
