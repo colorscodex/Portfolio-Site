@@ -382,6 +382,7 @@ figure:hover {
     -moz-box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
 } 
 
+#reset-alembic:focus,
 #reset-alembic:hover {
     background-color: #ff7f50;
     text-decoration: none;
@@ -522,6 +523,7 @@ h2 {
     -webkit-align-items: flex-end;
     margin: 0;
     padding: 30px 100px;
+    bottom: 0;
 }
 
 .image-footer {
