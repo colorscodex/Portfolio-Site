@@ -678,6 +678,10 @@ div.up {
     .cv-button {        
         margin-left: 15px;
     }
+    
+    .language {
+        margin-right: 15px;
+    }
 
     .description {    
         font: 400 18px "News Cycle", sans-serif;
@@ -774,6 +778,10 @@ div.up {
 
     .cv-button {        
         margin-left: 25px;
+    }
+    
+    .language {
+        margin-right: 25px;
     }
 
     .description {    
@@ -891,7 +899,6 @@ div.up {
 
     .language {
         font-size: 15px;
-        padding: 5px;
     }
 
     h2 {
@@ -942,6 +949,10 @@ div.up {
 
     .cv-button {        
         margin-left: 25px;
+    }
+    
+    .language {
+        margin-right: 25px;
     }
 
     #bottom-container {    
