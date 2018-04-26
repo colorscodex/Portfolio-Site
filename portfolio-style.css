@@ -103,14 +103,6 @@ body {
     outline: none;
 }
 
-.container {
-    width: 100%;
-    padding: 0 100px;
-    background-color: #fffff0;
-    color:  #696969;
-    margin: 0 auto;  
-}
-
 /*  Nav: fixed. */
 
 nav {
@@ -174,7 +166,24 @@ nav {
     text-align: right;
 }
 
+/*  Container 
+    ========= */
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;      
+    background-color: #fffff0;
+    color:  #696969;   
+}
+
 /*  General specifications. */ 
+
+header,
+main,
+div.up {
+    padding: 0 100px;
+}
 
 hr,
 h2,
@@ -208,7 +217,7 @@ header {
 
 hr {
     border: 1.2px solid #696969;
-    margin: 20px 0;
+    margin: 20px 100px;
 }
 
 /*  I use cards for marking up the photos
@@ -523,6 +532,7 @@ h2 {
     -webkit-align-items: flex-end;
     margin: 0;
     padding: 30px 100px;
+    position:relative;
     bottom: 0;
 }
 
@@ -626,11 +636,11 @@ h2 {
 /*  TODO: A link for going to the top of the page.
     ============================================== */
 
-.up {
+div.up {
     justify-content: flex-end;
     font-size: 20px;
     width: 100%;
-    padding: 20px 5px 10px 0;
+    padding: 20px 105px 10px 0;
     margin: 10px auto;
 }
 
@@ -650,10 +660,23 @@ h2 {
 /*  For little screens, it change font-family of the text and centered. */
  
 @media screen and (max-width: 450px){
+    
+    header,
+    main {     
+        padding: 0 15px;
+    }
 
-    .container { 
-        margin: 0 auto;       
-        padding: 0;
+    hr {
+        border: 1px solid #7d97ad;
+        margin: 10px 15px;
+    }
+
+    div.up {    
+        padding: 0 20px;
+    }
+
+    .cv-button {        
+        margin-left: 15px;
     }
 
     .description {    
@@ -735,9 +758,22 @@ h2 {
 
 @media screen and (min-width: 451px) and (max-width: 800px){
 
-    .container {  
-        margin: 0;      
-        padding: 0 10px;
+    header,
+    main {     
+        padding: 0 25px;
+    }
+
+    hr {
+        border: 1px solid #7d97ad;
+        margin: 10px 25px;
+    }
+
+    div.up {    
+        padding: 0 30px;
+    }
+
+    .cv-button {        
+        margin-left: 25px;
     }
 
     .description {    
@@ -827,11 +863,6 @@ h2 {
         justify-content: center;
         -webkit-justify-content: center;
     }
-    
-    hr {
-        margin: 10px 0;
-        border: 1px solid #7d97ad;
-    }
 
     .card {
        display: block;
@@ -861,11 +892,6 @@ h2 {
     .language {
         font-size: 15px;
         padding: 5px;
-    }
-   
-    .cv-buttom {        
-        margin-left: 10px;
-        margin-right: 10px;
     }
 
     h2 {
@@ -899,11 +925,29 @@ h2 {
 
 @media screen and (min-width: 801px) and (max-width: 1100px){
 
-    .container {  
-        margin: 0 auto;      
-        padding: 0 10px;
+    header,
+    main,
+    div.up {       
+        padding: 0 25px;
     }
 
+    hr {
+        border: 1px solid #7d97ad;
+        margin: 10px 25px;
+    }
+
+    div.up {    
+        padding: 0 30px;
+    }
+
+    .cv-button {        
+        margin-left: 25px;
+    }
+
+    #bottom-container {    
+        padding: 30px 25px;
+    }
+    
     .personal-information {
         width: 70%;
         height: 94px;  
@@ -989,11 +1033,6 @@ h2 {
 }
 
 @media screen and (max-width: 1100px){
-
-    main,
-    .up {        
-        margin: 0;
-    }
    
     .card-action {
         font-size: 30px;
@@ -1005,18 +1044,6 @@ h2 {
 
     figure:hover {
         box-shadow:none;
-    }
-
-    main {        
-        padding: 0 15px;
-    }
-
-    .up {
-        padding: 0 20px;
-    }
-
-    hr {
-        margin: 10px 0;
     }
 }
 
