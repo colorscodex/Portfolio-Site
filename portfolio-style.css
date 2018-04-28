@@ -149,6 +149,9 @@ nav {
     margin-top: 20px;
 }
 
+/*  TODO list-style: 
+    ================ */
+
 .cv-button {
     float: left;
     width: 20%;
@@ -198,7 +201,8 @@ section {
     flex-wrap: wrap;
 }
 
-/*  Header */
+/*  Header
+    ====== */
 
 header {
     margin-top: 70px; 
@@ -258,7 +262,7 @@ hr {
     cursor: pointer;
 }
 
-/*  A link for speciphic projescts. */
+/*  TODO: A link for speciphic projescts. */
 
 .link {
     outline: none;
@@ -266,7 +270,7 @@ hr {
     color: #4b0082;
 }
 
-/*  For the text of the card and of the language in the nav. */
+/*  TODO: For the text of the card and of the language in the nav. */
 
 a {
     outline: none;
@@ -314,7 +318,6 @@ figure:hover {
 
 /*  Rotate an image:
     ================== */
-
 /*  class for the div with the image. */
 
 #rotation:focus,
@@ -322,9 +325,7 @@ figure:hover {
     width: 400px;
     height: 400px;
     display: flex;
-    background-image: url("alembic.jpg"); 
-    background-repeat: no-repeat;   
-    background-color: #fffff0;
+    background-image: #fffff0 url("alembic.jpg") no-repeat;   
     cursor: pointer;
 }
 
@@ -383,7 +384,7 @@ figure:hover {
     text-decoration: none;
     display: inline-block;
     font-size: 10px;
-    margin: 0;
+    margin: 475px 0 0 -75px;
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
@@ -400,7 +401,49 @@ figure:hover {
     -moz-box-shadow: 0px 2px 5px #c0c0c0;
 }
 
-/*  Specification of the text properties. */
+/*  Specification of the text properties of all page.
+    ================================================= */
+
+blockquote {
+    font: 300 italic 30px "Raleway", sans-serif;
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    -webkit-text-align-last: center;
+    -ms-text-align-last: center;
+    margin: 150px 150px;
+}
+
+blockquote:first-of-type {
+    margin:100px;
+}
+
+.author {
+    font: 300 20px "Lato", sans-serif;
+    margin-bottom: 0;
+}
+
+h1 {
+    font: 200 50px "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    margin: 40px 0 0 0;
+}
+
+h2 {
+    font: 300 35px "Lato", sans-serif;
+    text-transform: capitalize; 
+    letter-spacing: 2px;  
+    color:  #2f4f4f;
+    margin: 0 0 20px 10px;
+}
+
+.professional-career {
+    font: 400 20px "Lato", sans-serif;
+    letter-spacing: 1px; 
+    margin: 0;
+    text-transform: uppercase;
+}
 
 h3 {
     font: 300 30px "Lato", sans-serif;
@@ -409,15 +452,14 @@ h3 {
     text-transform: capitalize; 
 }
 
-.title-almbc {
-    text-align: left;  
-    text-transform: none;
-}
+/*  class of the div element with the paragraphs. */
 
 .about-image {        
     display: block;
     width: 60%;
 }
+
+/* p elements */
 
 .description {    
     font: 300 22px "Lato", sans-serif;
@@ -450,26 +492,10 @@ em {
     font: italic 400 22px "Lato", sans-serif;
 }
 
-/*  Specification of the text properties of the page.
-    ================================================= */
+/*  for the image with Alembic */
 
-blockquote {
-    font: 300 italic 30px "Raleway", sans-serif;
-    text-align: center;
-    text-align-last: center;
-    -moz-text-align-last: center;
-    -webkit-text-align-last: center;
-    -ms-text-align-last: center;
-    margin: 150px 150px;
-}
-
-blockquote:first-of-type {
-    margin:100px;
-}
-
-.author {
-    font: 300 20px "Lato", sans-serif;
-    margin-bottom: 0;
+.first-paragraph {
+    margin-left: 0;  
 }
 
 .text-almbc {
@@ -485,26 +511,23 @@ blockquote:first-of-type {
     text-align: center;
 }
 
-h1 {
-    font: 200 50px "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px; 
-    margin: 40px 0 0 0;
+/*  TODO: For the list with the specifications about alembic. */
+
+.alembic {
+    margin-left: 20px;
 }
 
-h2 {
-    font: 300 35px "Lato", sans-serif;
-    text-transform: capitalize; 
-    letter-spacing: 2px;  
-    color:  #2f4f4f;
-    margin: 0 0 20px 10px;
+/*  Curriculum card: text properties for the professional information. */
+
+#curriculum  h1 {
+    font: 400 1.2em "News Cycle", sans-serif;
+    text-transform: none;
+    color:  #2f4f4f; 
 }
 
-.professional-career {
-    font: 400 20px "Lato", sans-serif;
-    letter-spacing: 1px; 
-    margin: 0;
-    text-transform: uppercase;
+#curriculum h2 {
+     font: 400 1em "News Cycle", sans-serif; 
+     color:  #2f4f4f;
 }
 
 /*  Footer 
@@ -582,19 +605,6 @@ h2 {
 .dark-slate-gray {
     background-color: #2f4f4f;
     margin-left: 10px;
-}
-
-/*  Curriculum card: text properties for the professional information. */
-
-#curriculum  h1 {
-    font: 400 1.2em "News Cycle", sans-serif;
-    text-transform: none;
-    color:  #2f4f4f; 
-}
-
-#curriculum h2 {
-     font: 400 1em "News Cycle", sans-serif; 
-     color:  #2f4f4f;
 }
 
 /*  Specification of the images size.
@@ -739,10 +749,18 @@ div.up {
     .author {
         font: 300 14px "Lato", sans-serif;
     }
+    
+    #reset-alembic {
+        margin: 25px 0 0 300px;
+    }
 
     .alembic {
         margin-left: 15px;
         padding-left: 0;
+    }
+    
+    .specification-image {        
+        margin: 50px 0;
     }
 
 /*  Specification of the images size.
@@ -840,6 +858,14 @@ div.up {
     .author {
         font: 300 16px "Lato", sans-serif;
     }
+    
+    #reset-alembic {
+        margin: 25px 0 0 560px;
+    }
+
+    .specification-image {        
+        margin: 75px 0;
+    }
 
 /*  Specification of the images size.
     ================================= */
@@ -914,10 +940,6 @@ div.up {
     .about-image {    
         width: 100%;
         padding-top: 0;
-    }
-
-    .others {        
-        margin: 50px 0;
     }
 
     .text-almbc { 
@@ -996,6 +1018,10 @@ div.up {
         height: 350px;    
         margin: auto;     
     }
+    
+    #reset-alembic {
+        margin: 425px 0 0 -35px;
+    }
 
 /*  Specification of the text properties. */
 
@@ -1021,6 +1047,10 @@ div.up {
 
     .almbc-author { 
         font-size: 18px;       
+    }
+    
+    .specification-image {        
+        margin-left: 20px;
     }
 
     h1 {
