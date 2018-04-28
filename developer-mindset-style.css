@@ -202,7 +202,7 @@ p:last-of-type {
 
 /*  when mouse is over link, change the color  */
 
-.chamge-page:hover {
+.change-page:hover {
     text-decoration: none;
     color: #ff7f50;
 }
