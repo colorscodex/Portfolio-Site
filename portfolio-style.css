@@ -325,7 +325,7 @@ figure:hover {
     width: 400px;
     height: 400px;
     display: flex;
-    background-image: #fffff0 url("alembic.jpg") no-repeat;   
+    background: #fffff0 url("alembic.jpg") no-repeat;   
     cursor: pointer;
 }
 
