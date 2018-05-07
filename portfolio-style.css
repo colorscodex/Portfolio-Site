@@ -680,6 +680,7 @@ div.up {
     
     .language {
         margin-right: 15px;
+        padding-top: 4px;
     }
 
     .description {    
@@ -784,6 +785,7 @@ div.up {
     
     .language {
         margin-right: 25px;
+        padding-top: 4px;
     }
 
     .description {    
@@ -908,7 +910,7 @@ div.up {
 /*  Specification of the text properties. */
 
     .language {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     h2 {
