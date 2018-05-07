@@ -195,6 +195,10 @@ header {
     float: left;
 }
 
+main {
+    margin-bottom: 150px;
+}
+
 header,
 section {
     flex-wrap: wrap;
@@ -645,7 +649,7 @@ div.up {
     font-size: 20px;
     width: 100%;
     padding: 20px 105px 10px 0;
-    margin: 150px auto 20px auto;
+    margin: 20px auto;
 }
 
 .go-top {
@@ -669,10 +673,13 @@ div.up {
     main {     
         padding: 0 15px;
     }
+    
+    main {
+        margin-bottom: 50px;
+    }
 
     div.up {    
         padding: 0 20px;
-        margin-top: 50px;
     }
 
     .cv-button {        
@@ -775,10 +782,13 @@ div.up {
     main {     
         padding: 0 25px;
     }
-
+    
+    main {
+        margin-bottom: 100px;
+    }
+            
     div.up {    
         padding: 0 30px;
-        margin-top: 100px;
     }
 
     .cv-button {        
@@ -947,9 +957,12 @@ div.up {
         padding: 0 25px;
     }
 
+    main {
+        margin-bottom: 100px;
+    }
+    
     div.up {    
         padding: 0 30px;
-        margin-top: 100px;
     }
 
     .cv-button {        
