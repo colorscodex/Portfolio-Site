@@ -645,7 +645,7 @@ div.up {
     font-size: 20px;
     width: 100%;
     padding: 20px 105px 10px 0;
-    margin: 10px auto;
+    margin: 150px auto 20px auto;
 }
 
 .go-top {
@@ -672,6 +672,7 @@ div.up {
 
     div.up {    
         padding: 0 20px;
+        margin-top: 50px;
     }
 
     .cv-button {        
@@ -777,6 +778,7 @@ div.up {
 
     div.up {    
         padding: 0 30px;
+        margin-top: 100px;
     }
 
     .cv-button {        
@@ -941,13 +943,13 @@ div.up {
 @media screen and (min-width: 801px) and (max-width: 1100px){
 
     header,
-    main,
-    div.up {       
+    main {       
         padding: 0 25px;
     }
 
     div.up {    
         padding: 0 30px;
+        margin-top: 100px;
     }
 
     .cv-button {        
