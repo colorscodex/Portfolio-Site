@@ -1,28 +1,27 @@
 /*
-	For creating an event listener:
-	===============================
+	.show() Method for opening the drawer with the Curriculum,
+	which has display: none in the style document.
+	========================================================== */
 
-	1- <event-target>: It is the element with id="open-drawer/close-drawer 
-	Store inside a variable called x/y using the method document.getElementById(). 
+$(document).ready(function(){
 
-	2- Define the function open/close.
+	$('#open-drawer').on('click', function(){
+		$('#curriculum').show();
 
-	3- <event-target>.addEventListener(<event-to-listen-for>, function-to-run-when-an-event-happens>);
-*/
+	});
+});
 
-const x = document.getElementById("open-drawer");
-function open() {
-	document.getElementById("curriculum").style.display= "block";	
-}
+/*
+	.hide() method for closing the drawer,
+	======================================================== */
 
-x.addEventListener ("click", open);
+$(document).ready(function(){
+	
+	$('#close-drawer').on('click', function(){
+		$('#curriculum').hide();
+	});
 
-const y = document.getElementById("close-drawer");
-function close () {
-	document.getElementById("curriculum").style.display= "none";	
-}
-
-y.addEventListener ("click", close);
+});
 
 /*	
 	For rotating an image.
@@ -31,17 +30,20 @@ y.addEventListener ("click", close);
 /*	jQuery: .addClass(className) for adding and removeClass() for removing.
 	======================================================================= */
 
-$( "#rotation" ).click(function(e) {
+$(document).ready(function(){
 	
-	e.preventDefault();
-	$( this ).addClass( "rot-image");
-
+	$( "#rotation" ).click(function(e) {
+		e.preventDefault();
+		$( this ).addClass( "rot-image");
+	});
 });
 
-$( "#reset-alembic" ).click(function(e) {
-
-	e.preventDefault();
-	$("#rotation").removeClass( "rot-image");
-
+$(document).ready(function(){
+	
+	$( "#reset-alembic" ).click(function(e) {
+		e.preventDefault();
+		$("#rotation").removeClass( "rot-image");
+	});
 });
+	
 
