@@ -16,7 +16,7 @@
     ============================================= */
 
 html {
-    font-family: "News Cycle", sans-serif;
+    font-family: "Lato", sans-serif;
     -ms-text-size-adjust: 100%; 
     -webkit-text-size-adjust: 100%;
 }
@@ -734,8 +734,11 @@ div.up {
         font-size: 12px;
     }
 
+    /* for small devices, change the color: black #000 */
+    
     blockquote {
         font: 400 18px "Raleway", sans-serif;
+        color: #000; 
         padding: 0;
         margin: 50px 0;
     }
