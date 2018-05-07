@@ -163,9 +163,9 @@ ul {
 
 
 .modal-footer {
+    height: 70px;
     text-align: right;
     background-color: #696969;
-    padding: 15px;
     border-top: 1px solid #e5e5e5;
     border-radius: 0 0 4px 4px;    
 }
@@ -183,7 +183,7 @@ ul {
     border: 0;
     border-radius: 5px;
     padding: 0 0 2px 0;
-    margin-right: 5px;
+    margin: 21.5px 25px 0 0;
     cursor: pointer; 
     -webkit-appearance: button;     
 }
