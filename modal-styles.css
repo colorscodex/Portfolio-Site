@@ -194,10 +194,6 @@ ul {
     background-color: #ff7f50; 
     border-radius: 5px; 
     color: #fffff0;
-    -webkit-appearance: button; 
-    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
 }
 
 
