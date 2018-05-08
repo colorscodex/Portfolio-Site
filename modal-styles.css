@@ -144,9 +144,10 @@ ul {
 
 
 #modal-main a {
-   outline: none;
-   font: 700 1em "News Cycle", sans-serif; 
-   color: #696969;
+    outline: none;
+    text-decoration: underline;
+    font: 700 1em "News Cycle", sans-serif;
+    color: #696969;
 }
 
 
