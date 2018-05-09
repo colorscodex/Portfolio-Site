@@ -227,6 +227,7 @@ header {
 hr {
     border: 1.2px solid #696969;
     margin: 20px 0;
+    width: 100%;
 }
 
 /*  I use cards for marking up the photos
