@@ -208,7 +208,7 @@ section {
     ====== */
 
 header {
-    margin: 70px 0 22px 0; 
+    margin-top: 70px; 
 }
 
 .logo-box {
@@ -220,6 +220,13 @@ header {
     width: 70%;
     height: 124px; 
     text-align: right;   
+}
+
+/* to separate header and main */
+
+hr {
+    border: 1.2px solid #696969;
+    margin: 20px 0;
 }
 
 /*  I use cards for marking up the photos
