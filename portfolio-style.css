@@ -1,14 +1,12 @@
 /*  For all browsers
  */
 
-
 *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
 }
-
 
 /*
     For preventing adjustments of font size after 
@@ -514,6 +512,7 @@ em {
 
 .alembic {
     margin-left: 20px;
+    font: 300 20px "Lato", sans-serif;
 }
 
 /*  Curriculum card: text properties for the professional information. */
@@ -758,6 +757,7 @@ div.up {
     }
 
     .alembic {
+        font: 400 18px "News Cycle", sans-serif;
         margin-left: 15px;
         padding-left: 0;
     }
