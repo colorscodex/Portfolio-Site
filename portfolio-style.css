@@ -349,6 +349,8 @@ figure:hover {
 .back {
     width: 400px;
     height: 400px;
+    color: #fffff0;
+    background-color: #2f4f4f;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;  /* Chrome, Safari, Opera */
     transform: rotateY(180deg);
@@ -388,7 +390,7 @@ figure:hover {
     box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
     -webkit-box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
     -moz-box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
-} 
+
 
 #reset-alembic:focus,
 #reset-alembic:hover {
