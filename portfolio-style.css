@@ -206,7 +206,7 @@ section {
     ====== */
 
 header {
-    margin: 70px 0 22px 0; 
+    margin-top: 70px; 
 }
 
 .logo-box {
@@ -218,6 +218,14 @@ header {
     width: 70%;
     height: 124px; 
     text-align: right;   
+}
+
+/* for separating header of main */
+
+.line {
+    border: 1.2px solid #696969;
+    margin: 20px 100px;
+    padding: 0 100px;
 }
 
 /*  I use cards for marking up the photos
@@ -675,6 +683,11 @@ div.up {
         padding: 0 15px;
     }
     
+    .line {
+        border: 1px solid #696969;
+        margin: 10px 15px;
+    }
+    
     main {
         margin-bottom: 50px;
     }
@@ -786,6 +799,11 @@ div.up {
     header,
     main {     
         padding: 0 25px;
+    }
+    
+    .line {
+        border: 1px solid #696969;
+        margin: 10px 25px;
     }
     
     main {
@@ -960,6 +978,11 @@ div.up {
     header,
     main {       
         padding: 0 25px;
+    }
+    
+    .line {
+        border: 1px solid #696969;
+        margin: 10px 25px;
     }
 
     main {
