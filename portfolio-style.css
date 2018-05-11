@@ -206,7 +206,7 @@ section {
     ====== */
 
 header {
-    margin: 70px 0 22px 0; 
+    margin: 70px 0 20px 0; 
 }
 
 .logo-box {
@@ -622,6 +622,8 @@ em {
  */
 
 .image-main {
+    border-top: 2px solid #2f4f4f;
+    padding-top: 20px;
     width: 100%;
     height: auto;
     vertical-align: middle;
@@ -883,6 +885,15 @@ div.up {
 /*  Specifications for other elements. */
 
 @media screen and (max-width: 800px){
+    
+    header {
+        margin: 70px 0 10px 0;
+      }
+    
+    .image-main {
+        border-top: 1px solid #2f4f4f;
+        padding-top: 10px;
+      }   
     
     #bottom-container {
         display: block;
