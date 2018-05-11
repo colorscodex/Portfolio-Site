@@ -893,7 +893,15 @@ div.up {
     .image-main {
         border-top: 1px solid #2f4f4f;
         padding-top: 10px;
-      }   
+      }
+    
+    figure {        
+        box-shadow: none;
+    }
+    
+    figure:hover {
+        box-shadow: none;
+    }
     
     #bottom-container {
         display: block;
@@ -1089,14 +1097,6 @@ div.up {
    
     .card-action {
         font-size: 30px;
-    }
-
-    figure {        
-        box-shadow: none;
-    }
-
-    figure:hover {
-        box-shadow: none;
     }
 }
 
