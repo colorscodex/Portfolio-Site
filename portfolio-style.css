@@ -695,7 +695,7 @@ div.up {
     }
 
     .description {    
-        font: 400 18px "News Cycle", sans-serif;
+        font: 400 20px "News Cycle", sans-serif;
         margin-left: 0;   
         text-align: justify;
     }
@@ -710,11 +710,11 @@ div.up {
     }
 
     em {
-       font: italic 400 18px "News Cycle", sans-serif;
+       font: italic 400 20px "News Cycle", sans-serif;
     }
 
     .comments {
-       font: 400 18px "News Cycle", sans-serif;
+       font: 400 20px "News Cycle", sans-serif;
        text-align: justify;
     }
 
