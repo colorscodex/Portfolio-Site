@@ -985,6 +985,10 @@ div.up {
         margin-bottom: 100px;
     }
     
+    figure {        
+        box-shadow: none;
+    }
+    
     div.up {    
         padding: 0 30px;
     }
