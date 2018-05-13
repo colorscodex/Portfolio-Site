@@ -761,7 +761,7 @@ div.up {
     .alembic {
         font: 400 18px "News Cycle", sans-serif;
         margin-left: 15px;
-        padding-left: 0;
+        padding-left: 5px;
     }
     
     .specification-image {        
