@@ -697,11 +697,6 @@ div.up {
         text-align: justify;
     }
 
-    .note {
-        font: 300 14px "Lato", sans-serif;
-        text-align: center;  
-    }
-
     .fa-bars {
        text-align: right;
     }
@@ -736,9 +731,9 @@ div.up {
     
     figure:hover {
         text-decoration: none;
-        box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
-        -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);    
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none; 
     }
     
     /* for small devices, change the color: black #000 */
@@ -815,11 +810,6 @@ div.up {
         font: 300 20px "Lato", sans-serif;
         margin-left: 0;   
         text-align: justify;
-    }
-
-    .note {
-        font: 300 14px "Lato", sans-serif;
-        text-align: right;  
     }
 
     .fa-bars {
