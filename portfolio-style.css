@@ -692,7 +692,7 @@ div.up {
     }
 
     .description {    
-        font: 400 20px "News Cycle", sans-serif;
+        font: 400 20px "Lato", sans-serif;
         margin-left: 0;   
         text-align: justify;
     }
@@ -702,7 +702,7 @@ div.up {
     }
 
     em {
-       font: italic 400 20px "News Cycle", sans-serif;
+       font: italic 400 20px "Lato, sans-serif;
     }
 
     .comments {
