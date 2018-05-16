@@ -729,6 +729,7 @@ div.up {
         font-size: 12px;
     }
     
+    figure,
     figure:hover {
         text-decoration: none;
         box-shadow: none;
@@ -844,6 +845,7 @@ div.up {
         font-size: 14px;
     }   
 
+    figure,
     figure:hover {
         box-shadow: none;
         -webkit-box-shadow: none;
