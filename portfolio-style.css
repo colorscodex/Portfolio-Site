@@ -284,9 +284,6 @@ a:hover {
 
 figure:focus,
 figure {
-     box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
-     -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
-     -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
      margin: 0;
      padding: 0;
 }
@@ -736,13 +733,7 @@ div.up {
     .professional-career {
         font-size: 12px;
     }
-    
-    figure {
-        box-shadow: none;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-    }
-    
+       
     /* for small devices, change the color: black #000 */
     
     blockquote {
@@ -854,13 +845,7 @@ div.up {
 
     .professional-career {
         font-size: 14px;
-    }
-    
-    figure {        
-        box-shadow: none;
-        -webkit-box-shadow: none;        
-        -moz-box-shadow: none;
-    }
+    }   
 
     figure:hover {
         box-shadow: none;
