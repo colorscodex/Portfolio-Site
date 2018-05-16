@@ -427,10 +427,6 @@ h1 {
     margin: 40px 0 0 0;
 }
 
-h2:first-of-type {
-    text-transform: capitalize;
-}
-
 h2 {
     font: 300 35px "Lato", sans-serif;
     letter-spacing: 2px;  
