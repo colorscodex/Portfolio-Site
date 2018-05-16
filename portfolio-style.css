@@ -694,7 +694,7 @@ div.up {
     }
 
     .fa-bars {
-       text-align: right;
+        text-align: right;
     }
 
     em {
@@ -704,6 +704,7 @@ div.up {
     .comments {
        font: 300 20px "Lato", sans-serif;
        text-align: justify;
+       line-height: 1.6;
     }
 
     .logo-box {
