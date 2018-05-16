@@ -690,6 +690,7 @@ div.up {
         font: 400 20px "Lato", sans-serif;
         margin-left: 0;   
         text-align: justify;
+        line-height: 1.6;
     }
 
     .fa-bars {
