@@ -365,19 +365,30 @@ figure:hover {
     -webkit-transform: rotateY(180deg); /* Safari */
 }
 
-/*  A span tag type button */
+/*  A span tag type button,
+    for the image with Alembic and for the image with circles */
 
+
+#stop-moving {
+    padding: 10px 7px;
+    margin: 300px 40px 0 0;
+} 
+
+#reset-alembic {
+    padding: 10px 5.25px;
+    margin: 475px 0 0 -75px;
+} 
+
+#stop-moving,
 #reset-alembic {
     float: right;
     background-color: #2f4f4f; 
     border: none;
     color: #fffff0;
-    padding: 10px 5.25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 10px;
-    margin: 475px 0 0 -75px;
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
@@ -385,6 +396,8 @@ figure:hover {
     -moz-box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
 }
 
+#stop-moving:focus,
+#stop-moving:hover,
 #reset-alembic:focus,
 #reset-alembic:hover {
     background-color: #ff7f50;
@@ -500,9 +513,10 @@ em {
     text-align: center;
 }
 
-/*  TODO: For the list with the specifications about alembic. */
+/*  TODO: For the list with the specifications about alembic. 
+    and the colors of the page */
 
-.alembic {
+.list {
     margin-left: 20px;
     font: 300 20px "Lato", sans-serif;
 }
@@ -639,7 +653,7 @@ em {
 /*  TODO: A link for going to the top of the page.
     ============================================== */
 
-div.up {
+.up {
     justify-content: flex-end;
     font-size: 20px;
     width: 100%;
@@ -673,7 +687,7 @@ div.up {
         margin-bottom: 50px;
     }
 
-    div.up {    
+    .up {    
         padding: 0 20px;
     }
 
@@ -750,12 +764,13 @@ div.up {
     .author {
         font: 300 16px "Lato", sans-serif;
     }
-    
+  
+    #stop-moving,
     #reset-alembic {
         margin: 25px 0 0 300px;
     }
 
-    .alembic {
+    .list {
         font: 300 18px "Lato", sans-serif;
         margin-left: 15px;
         padding-left: 5px;
@@ -791,7 +806,7 @@ div.up {
         margin-bottom: 100px;
     }
             
-    div.up {    
+    .up {    
         padding: 0 30px;
     }
 
@@ -863,6 +878,7 @@ div.up {
         font: 300 16px "Lato", sans-serif;
     }
     
+    #stop-moving,
     #reset-alembic {
         margin: 25px 0 0 560px;
     }
@@ -977,7 +993,7 @@ div.up {
         margin-bottom: 100px;
     }
     
-    div.up {    
+    .up {    
         padding: 0 30px;
     }
 
@@ -1029,6 +1045,10 @@ div.up {
         width: 350px; 
         height: 350px;    
         margin: auto;     
+    }
+    
+    #stop-moving {
+        margin: 455px 15px 0 0px;
     }
     
     #reset-alembic {
