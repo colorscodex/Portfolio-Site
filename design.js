@@ -47,7 +47,36 @@ $(document).ready(function(){
 		$("#circle-2").css( "animation-iteration-count","0");
 		$("#circle-3").css( "animation-iteration-count","0");
 		$("#circle-4").css( "animation-iteration-count","0");
+		// for Safari
+		$("#circle-1").css( "-webkit-animation-iteration-count","0");
+		$("#circle-2").css( "-webkit-animation-iteration-count","0");
+		$("#circle-3").css( "-webkit-animation-iteration-count","0");
+		$("#circle-4").css( "-webkit-animation-iteration-count","0");
 	});
+	
+	// for iOS 9.3.5 and iPhone iOS 11
+	
+	$( ".box" ).click(function(e) {
+
+		e.preventDefault();
+		$("#circle-1").css( "animation-iteration-count","infinite");
+		$("#circle-2").css( "animation-iteration-count","infinite");
+		$("#circle-3").css( "animation-iteration-count","infinite");
+		$("#circle-4").css( "animation-iteration-count","infinite");
+		// for Safari
+		$("#circle-1").css( "-webkit-animation-iteration-count","infinite");
+		$("#circle-2").css( "-webkit-animation-iteration-count","infinite");
+		$("#circle-3").css( "-webkit-animation-iteration-count","infinite");
+		$("#circle-4").css( "-webkit-animation-iteration-count","infinite");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
 });
 	
 
