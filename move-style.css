@@ -41,25 +41,25 @@
 #circle-1 {
     background-color: #696969;
     animation: billiardsOne 5s infinite;
-    -webkit-animation: myMove 5s infinite;
+    -webkit-animation: billiardsOne 5s infinite;
 }
 
 #circle-2 {
     background-color: #2f4f4f;
     animation: billiardsTwo 5s infinite;
-    -webkit-animation: myMove 5s infinite; 
+    -webkit-animation: billiardsTwo 5s infinite; 
 }
 
 #circle-3 {
     background-color: #ff7f50;
     animation: billiardsThree 5s infinite;
-    -webkit-animation: myMove 5s infinite; 
+    -webkit-animation: billiardsThree 5s infinite; 
 }
 
 #circle-4 {
     background-color: #fffff0;
     animation: billiardsFour 5s infinite;
-    -webkit-animation: myMove 5s infinite; 
+    -webkit-animation: billiardsFour 5s infinite; 
 }
 
 /*
