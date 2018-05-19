@@ -47,14 +47,15 @@ $(document).ready(function(){
 		$("#circle-2").css( "animation-iteration-count","0");
 		$("#circle-3").css( "animation-iteration-count","0");
 		$("#circle-4").css( "animation-iteration-count","0");
-		// for Safari
+		
+		// for Safari iOS 9.3.5 and iOS 11 works well
 		$("#circle-1").css( "-webkit-animation-iteration-count","0");
 		$("#circle-2").css( "-webkit-animation-iteration-count","0");
 		$("#circle-3").css( "-webkit-animation-iteration-count","0");
 		$("#circle-4").css( "-webkit-animation-iteration-count","0");
 	});
 	
-	// for iOS 9.3.5 and iPhone iOS 11
+	// For restart the moving, click on the table with circles.
 	
 	$( ".box" ).click(function(e) {
 
@@ -68,14 +69,7 @@ $(document).ready(function(){
 		$("#circle-2").css( "-webkit-animation-iteration-count","infinite");
 		$("#circle-3").css( "-webkit-animation-iteration-count","infinite");
 		$("#circle-4").css( "-webkit-animation-iteration-count","infinite");
-	});
-	
-	
-	
-	
-	
-	
-	
+	});	
 	
 });
 	
