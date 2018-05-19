@@ -774,6 +774,7 @@ div.up {
         font: 300 18px "Lato", sans-serif;
         margin-left: 15px;
         padding-left: 5px;
+        line-height: 1.6;
     }
     
     .specification-image {        
