@@ -34,6 +34,20 @@ $(document).ready(function(){
 		e.preventDefault();
 		$("#rotation").removeClass( "rot-image");
 	});
+	
+	
+	/*
+	To stop the infinite moving.
+	============================ */
+	
+	$( "#stop-moving" ).click(function(e) {
+
+		e.preventDefault();
+		$("#circle-1").css( "animation-iteration-count","0");
+		$("#circle-2").css( "animation-iteration-count","0");
+		$("#circle-3").css( "animation-iteration-count","0");
+		$("#circle-4").css( "animation-iteration-count","0");
+	});
 });
 	
 
