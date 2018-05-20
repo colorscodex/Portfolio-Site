@@ -397,7 +397,17 @@ figure:hover {
 }
 
 #stop-moving:focus,
-#stop-moving:hover,
+#stop-moving:hover {
+    color: #696969;
+    text-decoration: none;
+    box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.5);
+    -webkit-box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.5);
+    -moz-box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.5);
+    background: #696969 linear-gradient(to bottom right, #fffff0, #ff7f50);
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);    
+} 
+
 #reset-alembic:focus,
 #reset-alembic:hover {
     background-color: #ff7f50;
