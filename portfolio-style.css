@@ -28,7 +28,7 @@ nav,
 .navbar-list,
 header,
 #bottom-container,
-.up,
+div.up,
 .colors-page,
 .card {
     display: -webkit-flex;
@@ -1131,7 +1131,7 @@ div.up {
         font-size: 30px;
     }
     
-    note {
+    .note {
         font: 300 16px "Lato", sans-serif;
     }
 }
