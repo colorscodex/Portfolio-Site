@@ -351,12 +351,6 @@ figure:hover {
     -webkit-transform: rotateY(180deg); /* Safari */
 }
 
-/*  For the list with the specifications about alembic. */
-
-.alembic {
-    margin-left: 20px;
-}
-
 /*  A class for using with addClass() and removeClass() method.
     =========================================================== */
 
@@ -504,6 +498,12 @@ em {
     font: italic 400 22px "Lato", sans-serif;
 }
 
+.note {
+    font: 300 16px "Lato", sans-serif;
+    word-spacing: 1px;
+    letter-spacing: -1px;
+}
+
 /*  for the image with Alembic */
 
 .first-paragraph {
@@ -529,6 +529,7 @@ em {
 .list {
     margin-left: 20px;
     font: 300 20px "Lato", sans-serif;
+    line-height: 1.4;
 }
 
 /*  Curriculum card: text properties for the professional information. */
@@ -889,7 +890,10 @@ div.up {
         font: 300 16px "Lato", sans-serif;
     }
     
-    #stop-moving,
+    #stop-moving {
+        margin: 25px 200px 0 560px;
+    }
+        
     #reset-alembic {
         margin: 25px 0 0 560px;
     }
