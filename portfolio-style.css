@@ -499,7 +499,7 @@ em {
 }
 
 .note {
-    font: 300 16px "Lato", sans-serif;
+    font: 300 18px "Lato", sans-serif;
     word-spacing: 1px;
     letter-spacing: -1px;
 }
@@ -1129,6 +1129,10 @@ div.up {
    
     .fa-bars {
         font-size: 30px;
+    }
+    
+    note {
+        font: 300 16px "Lato", sans-serif;
     }
 }
 
