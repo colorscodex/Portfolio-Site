@@ -622,6 +622,35 @@ em {
     margin-left: 10px;
 }
 
+/* bottom of the page with validator */
+
+.bottom-page {
+    border-top: 1px solid #fffff0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 100px;
+    margin: 0;
+    background-color: #696969;
+    justify-content: space-between;
+    align-items: flex-end;
+    -webkit-justify-content: space-between; 
+    -webkit-align-items: flex-end;
+}
+
+.validator {
+    margin: 0;
+    padding-top: 3px;
+}
+
+.validator-img {
+    border:0;
+    width:56.77px;
+    height:20px;
+}
+
 /*  Specification of the images size.
     ================================= */
 
@@ -700,6 +729,10 @@ div.up {
 
     div.up {    
         padding: 0 20px;
+    }
+    
+    .bottom-page {
+        padding: 3px 25px;
     }
 
     .cv-button {        
@@ -820,6 +853,10 @@ div.up {
             
     div.up {    
         padding: 0 30px;
+    }
+    
+    .bottom-page {
+        padding: 5px 30px;
     }
 
     .cv-button {        
@@ -1022,6 +1059,10 @@ div.up {
 
     #bottom-container {    
         padding: 30px 25px;
+    }
+    
+    .bottom-page {
+        padding: 5px 30px;
     }
     
     .personal-information {
