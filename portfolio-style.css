@@ -392,7 +392,6 @@ figure:hover {
 
 #stop-moving:focus,
 #stop-moving:hover {
-    color: #696969;
     text-decoration: none;
     box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.5);
     -webkit-box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.5);
