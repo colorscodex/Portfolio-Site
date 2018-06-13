@@ -482,8 +482,7 @@ h3 {
 
 .comments {
     font: 300 22px "Lato", sans-serif;
-    margin: 20px 0 0 0;
-    border-left: 4px solid  #2f4f4f;  
+    margin: 20px 0 0 0; 
     padding-left: 10px;
 }
 
