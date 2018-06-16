@@ -215,24 +215,19 @@ p:last-of-type {
 .up {
     font-size: 20px;
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
     width: 100%;
     padding: 0 100px;
     margin: 20px  auto;
 }
 
 
-.go-top {
+.fa-arrow {
     outline: none;
     text-decoration: none;
     color: #ff7f50;
-    margin: 0;
-}
-
-
-.fa-arrow {
-    color: #ff7f50;
     width: 20px;
-    margin: 0 8px 0 10px;
+    margin: 0 8px;
     text-align: center;     
 }
 
