@@ -491,7 +491,7 @@ h3 {
     width: 400px;
     height: 400px;
     display: flex;
-    background: #fffff0 url("../images/portfolio/alembic.jpg") no-repeat;   
+    background: #fffff0 url("alembic.jpg") no-repeat;   
     cursor: pointer;
 }
 
