@@ -1,1 +1,1444 @@
+/*  For all browsers */
+
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+
+/*
+ *   For preventing adjustments of font size after 
+ *   orientation changes in IE and iOS.
+ *   ===========================================
+ */
+
+
+html {
+    font-family: "Lato", sans-serif;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/* In common:
+    display: -webkit-flex as an alternative for display: flex for Safari. */
+
+
+nav,
+.navbar-list,
+header,
+#bottom-container,
+.bottom-page,
+.go-top,
+.colors-page,
+.card {
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+/*
+ *  The justify-content property aligns the flexible container's items.   
+ *  -webkit-justify-content: space-between
+ *  as an alternative for the property justify-content
+ *  for Safari 6.1 (and newer).
+ *         
+ */
+
+
+.card,
+section {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+
+/* Add :focus selector to select the element that has focus.
+    ========================================================
+    and with ::-moz-focus-inner remove the inner border in Firefox. */  
+
+
+.skip-link::-moz-focus-inner,
+#open-drawer::-moz-focus-inner,
+#close-drawer::-moz-focus-inner,
+#reset-alembic::-moz-focus-inner {
+    border-style: none;
+} 
+
+
+ /* Init 
+    ==== */ 
+
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Lato", sans-serif;    
+    width: 100%;
+    background-color: #fffff0;
+}
+
+
+/*  Skip link
+    ========= */
+
+
+.skip-link {
+    font-size: 12px;
+    padding: 1px;
+    border-bottom-right-radius: 4px;
+    top:-100px;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    outline: none;
+    text-decoration: none;
+    background-color: #fffff0;
+    color: #ff7f50;
+    cursor: default;
+}
+
+
+/*  The skip-link is invisible until it receives keyboard focus */
+
+
+.skip-link:focus {
+    top: 0;
+}
+
+
+.skip-link:hover,
+.skip-link:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+/*  Nav: fixed.
+    =========== */
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    color: #fffff0;
+    background-color: #696969;
+    z-index: 10;
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);  
+}
+
+
+/*  Style for an unordered list: */
+
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0;    
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/*  list item: button to open the drawer with CV; */
+
+
+.cv-button {
+    float: left;
+    width: 20%;
+    margin-left: 20px;
+}
+
+
+/*  TODO: Button to oppen the modal-collapse with the CV. */
+
+
+#open-drawer {
+    width: 80px;
+    font: 300 20px "Lato", sans-serif;
+    cursor: pointer;
+    color: #2f4f4f;
+    background-color: #fffff0; 
+    border: 0;
+    border-radius: 5px;
+    padding: 0 0 2px 0;   
+}
+
+
+/*  For creating move with the box-shadow. */
+
+
+#open-drawer:hover {
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: #ff7f50;
+}
+
+
+/*  Specification for the drawer that contains the CV.
+    ================================================== */
+
+
+#curriculum {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; 
+}
+
+
+/*  Curriculum card: text properties for the professional information. */
+
+
+#curriculum  h1 {
+    font: 400 1.2em "News Cycle", sans-serif;
+    text-transform: none;
+    color:  #2f4f4f; 
+}
+
+
+#curriculum h2 {
+     font: 400 1em "News Cycle", sans-serif; 
+     color:  #2f4f4f;
+}
+
+
+/*  List item: to translate language; */
+
+
+.language {
+    float: right;
+    cursor: pointer;
+    width: 80%;
+    margin-right: 20px;
+    font: 300 20px "Lato", sans-serif;
+    text-align: right;
+}
+
+
+/*  Container 
+    ========= */   
+
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #fffff0;
+    color: #696969;  
+}
+
+
+/*  General specifications.
+    ======================= */ 
+
+
+header,
+main,
+.go-top {
+    padding: 0 100px;
+}
+
+
+header,
+main {
+    width: 100%;
+    float: left;
+}
+
+
+section {
+    flex-wrap: wrap;
+}
+
+
+/*  TODO: A link for speciphic projescts and other pages */
+
+
+.link {
+    outline: none;
+    text-decoration: underline;
+    color: #2f4f4f;
+}
+
+
+/*  TODO: For the text of the card and of the button language in the nav. */
+
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #fffff0;
+}
+
+
+/* When mouse is over link, change the color.  */
+
+
+a:hover {
+    text-decoration: none;
+    color: #ff7f50;
+}
+
+
+/*  Header 
+    ======  */
+
+
+header {
+    margin: 70px 0 20px 0;
+}
+
+
+.logo-box {
+    width: 30%;
+    height: 124px;   
+}
+
+
+.logo-image {
+    width: 84px;
+    height: 84px;
+    border-radius: 50px;
+    margin-top: 40px;
+    display: block;
+}
+
+
+.personal-information {
+    width: 70%;
+    height: 124px; 
+    text-align: right;   
+}
+
+
+h1 {
+    font: 200 50px "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    margin: 40px 0 0 0;
+}
+
+
+.professional-career {
+    font: 400 20px "Lato", sans-serif;
+    letter-spacing: 1px; 
+    margin: 0;
+}
+
+
+/*  Main
+    ==== */
+
+
+/*  Image With width 100% and height auto for being responsive and scale up and down; 
+    margin-left and margin-right auto to center the image */
+
+
+.image-main {
+    border-top: 2px solid #2f4f4f;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*  Quotes to separate sections.
+    ============================ */
+
+
+blockquote {
+    font: 300 italic 30px "Raleway", sans-serif;
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    -webkit-text-align-last: center;
+    -ms-text-align-last: center;
+    margin: 150px 150px;
+}
+
+
+blockquote:first-of-type {
+    margin:100px;
+}
+
+
+.author {
+    font: 300 20px "Lato", sans-serif;
+    margin-bottom: 0;
+}
+
+
+/*  Section with cards: specifications. 
+    ===================================
+*   I use cards for marking up the photos 
+    which represent important areas of work.
+    ===========================================
+*   TODO: add an item action to visit other important documents.
+    ============================================================ 
+
+*   Align-items property: Center the alignments
+    for the two items, one with a image and other with text
+    of the flexible <div class="card"> element. */
+
+
+/* Title of section */
+
+
+h2 {
+    font: 300 35px "Lato", sans-serif;
+    letter-spacing: 2px;  
+    color:  #2f4f4f;
+    margin: 0 0 20px 10px;
+}
+
+
+ /* Cards */
+
+
+.card {
+    width: 100%;    
+    background-color: #fffff0;
+    color: #696969;  
+    margin: 0 0 100px 0;
+    border-radius: 4px;
+    align-items: center;    
+    -webkit-align-items: center;
+}
+
+
+/*  TODO: the image of the card is an item-action.
+    <figure> is nested inside <a> element with class = card-action. */
+
+
+.card-action:focus,
+.card-action:hover {
+    text-decoration: none;
+}
+
+
+.card-action {
+    outline: none;
+    color: #696969;
+    cursor: pointer;
+}
+
+
+/*  Position and center the image to scale nicely on all screens. */
+
+
+figure:focus,
+figure {
+     margin: 0;
+     padding: 0;
+}
+
+
+figure:focus,
+figure:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);    
+}
+
+
+/*  With max-width, for scaling down if it has to,
+    but never scale up to be larger than its original size. */
+
+
+.image-card {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto; 
+    display: block;
+}
+
+
+h3 {
+    font: 300 30px "Lato", sans-serif;
+    text-align: center;  
+    padding: 30px; 
+    margin: 0;
+    text-transform: capitalize; 
+}
+
+
+/*  Rotate an image:
+    ================== */
+/*  class for the div with the image. */
+
+
+#rotation:focus,
+#rotation {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    background: #fffff0 url("../images/portfolio/alembic.jpg") no-repeat;   
+    cursor: pointer;
+}
+
+
+/*  front-class with the image and back-class with text.
+    ==================================================== */
+
+
+.back, 
+.front {
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;               
+    -webkit-transform-style: preserve-3d; 
+    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s;
+}  
+
+
+.front {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;  
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0); 
+}
+
+
+.back {
+    width: 400px;
+    height: 400px;
+    color: #fffff0;
+    background-color: #2f4f4f;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;  
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); 
+}
+
+
+/*  A class for using with addClass() and removeClass() method.
+    =========================================================== */
+
+
+.rot-image {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); 
+}
+
+
+/*  A span element type button for the image with Alembic and for the image with circles */
+
+
+#stop-moving {
+    padding: 10px 7px;
+    margin: 300px 40px 0 0;
+} 
+
+
+#reset-alembic {
+    padding: 10px 5.25px;
+    margin: 475px 0 0 -75px;
+} 
+
+
+#stop-moving,
+#reset-alembic {
+    float: left;
+    background-color: #2f4f4f; 
+    border: none;
+    color: #fffff0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
+    -webkit-box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
+    -moz-box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
+    z-index: 1;
+} 
+
+
+#stop-moving:focus,
+#stop-moving:hover {
+    text-decoration: none;
+    box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.3);
+    -webkit-box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.3);
+    -moz-box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.3);
+    background: #696969 linear-gradient(to bottom right, #fffff0, #ff7f50);
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);    
+} 
+
+
+#reset-alembic:focus,
+#reset-alembic:hover {
+    background-color: #ff7f50;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px #c0c0c0;
+    -webkit-box-shadow: 0px 2px 5px #c0c0c0;
+    -moz-box-shadow: 0px 2px 5px #c0c0c0;
+}
+
+
+/*  Text of the sections
+    ==================== */
+
+/*  class of the div element with the paragraphs.*/
+
+
+.about-image {        
+    display: block;
+    width: 60%;
+}
+
+
+/*  p elements */
+
+
+.description {    
+    font: 300 22px "Lato", sans-serif;
+    letter-spacing: 1px;
+    white-space: normal;
+    text-align: justify;
+    padding: 0;
+    margin-left: 20px;    
+}
+
+
+em {
+    font: italic 400 22px "Lato", sans-serif;
+}
+
+
+.fa-bars {
+    font: 400 35px Lato, sans-serif;
+    padding-top: 0;
+    text-align: right;
+    margin: 0;
+}
+
+
+.note {
+    font: 300 18px "Lato", sans-serif;
+    word-spacing: 1px;
+    letter-spacing: -1px;
+}
+
+
+.comments {
+    font: 300 22px "Lato", sans-serif;
+    margin: 20px 0 0 0;
+    border-left: 4px solid  #2f4f4f;  
+    padding-left: 10px;
+}
+
+
+/* for the image with Alembic */
+
+
+.first-paragraph {
+    margin-left: 0;  
+}
+
+
+.text-almbc {
+    font: 300 italic 20px "Raleway", sans-serif;
+    margin-top: 120px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+.almbc-author {
+    font: 300 20px "Lato", sans-serif;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+/*  TODO: For the list with the specifications about alembic. 
+    And the colors of the page. 
+*/
+
+
+.list {
+    margin-left: 20px;
+    font: 300 20px "Lato", sans-serif;
+    line-height: 1.4;
+}
+
+
+/* moving infinite */
+
+
+.note {
+    font: 300 18px "Lato", sans-serif;
+    word-spacing: 1px;
+    letter-spacing: -1px;
+}
+
+
+/*  TODO: A link for going to the top of the page. 
+    ============================================== */
+
+
+.go-top {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px 105px 10px 0;
+    margin: 150px auto 20px auto;
+}
+
+
+.arrow {
+    outline: none;
+    text-decoration: none;
+    color: #ff7f50;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    width: 20px;
+    text-align: center;
+    margin-left: 10px; 
+}
+
+
+/*  Footer 
+    ====== */
+/*  To close the page with a desing and a date. */
+/*
+ *  The justify-content property aligns the flexible container's items.   
+ *  -webkit-justify-content: space-between
+ *  as an alternative for the property justify-content
+ *  for Safari 6.1 (and newer).        
+ *//*
+ *  Align-items property: flex-end the alignments
+ *  for the two items, one with a image and other with text
+ *  of the flexible <footer> element.
+ */
+
+
+#bottom-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #696969; 
+    justify-content: space-between;
+    align-items: flex-end;
+    -webkit-justify-content: space-between; 
+    -webkit-align-items: flex-end;
+    margin: 0;
+    padding: 30px 100px;
+}
+
+
+.image-footer {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0;
+    display: block;
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+}
+
+
+.image-footer:focus,
+.image-footer:hover {
+    background-clip: padding-box;
+    border: 10px dotted #fffff0;
+
+}
+
+
+/* Colors used in the page. */
+
+
+.colors-page {
+    font: 300 20px "Lato", sans-serif;
+    color: #fffff0;
+    width: 50%;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin: 0;
+}
+
+
+.ivory,
+.dim-gray,
+.dark-slate-gray {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.2);
+    margin: 0 5px;
+}
+
+
+.ivory {
+    background-color: #fffff0;
+}
+
+
+.dim-gray {
+    background-color: #696969;
+}
+
+
+.dark-slate-gray {
+    background-color: #2f4f4f;
+    margin-left: 10px;
+}
+
+
+/* bottom of the page with validator */
+
+
+.bottom-page {
+    border-top: 1px solid #fffff0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 100px;
+    margin: 0;
+    background-color: #696969;
+    justify-content: space-between;
+    align-items: flex-end;
+    -webkit-justify-content: space-between; 
+    -webkit-align-items: flex-end;
+}
+
+
+.validator {
+    margin: 0;
+    padding-top: 3px;
+}
+
+
+.validator-img {
+    border:0;
+    width:56.77px;
+    height:20px;
+}
+
+
+/*  Layout responsive with two breack points.
+    ========================================= */
+/*  For little screens, it changes font-family of the text. */
+
+ 
+@media screen and (max-width: 450px){
+
+    header,
+    main {     
+        padding: 0 15px;
+    }
+
+
+    /* nav */
+
+
+    .cv-button {        
+        margin-left: 15px;
+    }
+
+
+    .language {
+        margin-right: 15px;
+        padding-top: 4px;
+    }
+
+
+    /*  header */
+
+
+    .logo-box {
+        height: 64px; 
+        width: 20%;  
+    }
+
+
+    .logo-image {
+        width: 40px;
+        height: 40px;
+        margin-top: 22px;
+    }
+
+
+    .personal-information {       
+        height: 64px; 
+        width: 80%;       
+    }
+
+
+    h1 {
+        font: 300 20px "Lato", sans-serif;
+        margin-top: 22px;
+    }
+
+
+    .professional-career {
+        font-size: 12px;
+    }
+
+
+    /* main: text; */
+    
+
+    .description {    
+        font: 300 20px "Lato", sans-serif;
+        margin-left: 0;   
+        text-align: justify;
+        letter-spacing: -0.02em;
+        word-spacing: 1.5px;
+    }
+
+
+    .fa-bars {
+       text-align: right;
+    }
+
+
+    em {
+       font: italic 300 20px "Lato", sans-serif;
+    }
+
+
+    .comments {
+       font: 300 20px "Lato", sans-serif;
+       text-align: justify;
+    }
+
+
+    blockquote {
+        font: 400 20px "Raleway", sans-serif;
+        padding: 0;
+        margin: 50px 0;
+    }
+
+
+    blockquote:first-of-type {
+        margin: 50px 0;
+    }
+    
+
+    .author {
+        font: 300 18px "Lato", sans-serif;
+    }
+
+
+    .list {
+        font: 300 18px "Lato", sans-serif;
+        margin-left: 15px;
+        padding-left: 5px;
+        line-height: 1.6;
+    }
+
+
+    .specification-image {        
+        margin: 50px 0;
+    }
+
+
+    /* buttons */
+
+
+    #stop-moving,
+    #reset-alembic {
+        margin: 25px 0 0 300px;
+    }
+
+
+    figure,
+    figure:hover {        
+        box-shadow: none;
+        -webkit-box-shadow: none;        
+        -moz-box-shadow: none;
+    }
+
+
+    .go-top {    
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+
+    /*  footer */
+
+
+    .bottom-page {
+        padding: 3px 25px;
+    }
+}
+
+
+/*  With this media:  the font family for the text is equal for the all page. */
+
+
+@media screen and (min-width: 451px) and (max-width: 800px){
+
+
+    header,
+    main {     
+        padding: 0 25px;
+    }
+
+
+    /*  nav */
+
+
+    .cv-button {        
+        margin-left: 25px;
+    }
+
+
+    .language {
+        margin-right: 25px;
+        padding-top: 4px;
+    }
+
+
+    /*  header */
+
+
+    .logo-box {
+        height: 77px; 
+        width: 20%;  
+    }
+
+
+    .logo-image {
+        width: 54px;
+        height: 54px;
+        margin-top: 23px;
+    }
+
+
+    .personal-information {       
+        height: 77px; 
+        width: 80%;       
+    }
+
+
+    h1 {
+        font: 300 30px "Lato", sans-serif;
+        margin-top: 23px;
+    }
+
+
+    .professional-career {
+        font-size: 14px;
+    }
+
+
+    /*  main */
+
+
+    .description {    
+        font: 300 20px "Lato", sans-serif;
+        margin-left: 0;   
+        text-align: justify;
+    }
+
+
+    .fa-bars {
+        text-align: right;
+    }
+
+
+    em {
+       font: italic 400 20px "Lato", sans-serif;
+    }
+
+
+    .comments {
+       font: 300 20px "Lato", sans-serif;
+       text-align: justify;
+    }
+
+
+    blockquote {
+        font: 400 22px "Raleway", sans-serif;
+        padding: 0 12px;
+        margin: 100px 0;
+    }
+
+    
+    blockquote:first-of-type {
+        margin: 100px 0;
+    }
+
+
+    .author {
+        font: 300 16px "Lato", sans-serif;
+    }
+
+
+    .specification-image {        
+        margin: 75px 0;
+    }
+
+
+    /*  buttons */
+
+
+    #stop-moving {
+        margin: 35px 200px 0 560px;
+    }
+
+
+    #reset-alembic {
+        margin: 35px 0 0 560px;
+    }
+
+
+    figure {        
+        box-shadow: none;
+        -webkit-box-shadow: none;        
+        -moz-box-shadow: none;
+    }
+
+
+    figure:hover {
+        box-shadow: none;
+        -webkit-box-shadow: none;        
+        -moz-box-shadow: none;
+    }
+
+
+    .go-top {    
+        padding: 0 30px;
+        margin-top: 100px;
+    }
+
+
+    /* footer */
+
+
+    .bottom-page {
+        padding: 5px 30px;
+    }
+}
+
+
+/*  Specifications for other elements. */
+
+
+@media screen and (max-width: 800px){
+
+
+    /*  nav */
+
+
+    .language {
+        font-size: 18px;
+    }
+
+
+    /*  header */
+
+
+    header {
+        margin: 70px 0 10px 0;
+    } 
+
+
+    /*  main */
+
+
+    .image-main {
+        border-top: 1px solid #696969;
+        padding-top: 10px;
+    } 
+
+
+    .card {
+       display: block;
+       margin: 0 0 50px 0;
+    }
+
+
+    /*  With a value for max-width, for scaling down if it has to,
+        but never scale up to be larger than its original size. */
+
+
+    .image-card {
+        width: 100%; 
+        max-width: 500px;
+        margin: auto;     
+    }
+
+
+    #rotation,
+    .back {
+        width: 300px; 
+        height: 300px;    
+        margin: auto;     
+    }
+
+
+    /*  text */
+
+
+    h2 {
+        font: 300 25px "Lato", sans-serif;
+        margin: 0 0 20px 0;
+    }
+
+    
+    h3 {
+        font: 300 20px "Lato", sans-serif;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+
+    .about-image {    
+        width: 100%;
+        padding-top: 0;
+    }
+
+
+    .text-almbc { 
+        font: 300 italic 18px "Raleway", sans-serif;       
+        margin: 50px 10px 0 10px;
+    }
+
+
+    .almbc-author { 
+        font-size: 16px;       
+    }
+
+
+    /*  footer */
+
+
+    #bottom-container {
+        display: block;
+        padding: 20px 15px;
+    }
+
+
+    .image-footer {
+        margin: 0 auto;
+    }
+
+
+    .colors-page {
+        font-size: 16px; 
+        width: 100%;
+        margin: 20px auto 0 auto;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1100px){
+    
+
+    header,
+    main {       
+        padding: 0 25px;
+    }
+
+
+    /*  nav */
+
+
+    .cv-button {        
+        margin-left: 25px;
+    }
+
+
+    .language {
+        margin-right: 25px;
+    }
+
+
+    /*  header */
+
+
+    .logo-box {
+        height: 94px; 
+        width: 30%;  
+    }
+
+
+    .logo-image {
+        margin-top: 32px;
+        width: 62px;
+        height: 62px; 
+    }
+
+
+    .personal-information {
+        width: 70%;
+        height: 94px;  
+    }
+
+
+    h1 {
+        font-size: 35px;
+        margin-top: 32px; 
+    }
+
+    
+    .professional-career {
+        font-size: 16px;
+    }
+
+    
+    /*  main */
+
+
+    .card {
+        width: 100%;
+        margin: 0 0 100px 0;
+    }
+
+
+    .about-image {        
+        display: block;
+        width: 60%;
+    }
+
+
+    .description:first-of-type {          
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+    #rotation,
+    .back {
+        width: 350px; 
+        height: 350px;    
+        margin: auto;     
+    }
+
+
+    #stop-moving {
+        margin: 455px 15px 0 0px;
+    }
+
+
+    #reset-alembic {
+        margin: 455px 0 0 -35px;
+    }
+
+
+    /*  text */
+
+
+    blockquote {
+        font: 300 italic 25px "Raleway", sans-serif;
+        padding: 0 17px;
+        margin: 100px 0;
+    }
+
+   
+    blockquote:first-of-type {
+        margin:100px;
+    }
+
+
+    .author {
+        font: 300 20px "Lato", sans-serif;
+        text-align: center;
+    }
+
+
+    .text-almbc {
+        font: 300 italic 20px "Raleway", sans-serif;        
+        margin: 100px 10px 0 10px;
+    }
+
+
+    .almbc-author { 
+        font-size: 18px;       
+    }
+
+
+    .specification-image {        
+        margin-left: 20px;
+    }
+
+    
+    h2 {
+        font: 300 30px "Lato", sans-serif;
+        margin-left: 0;     
+    }
+
+
+    h3 {
+        padding: 20px 0;
+        margin: 0; 
+    }
+
+
+    .comments {
+       text-align: justify;
+       margin-top: 50px;
+    }
+
+
+    .go-top {    
+        padding: 0 30px;
+    }
+
+
+    /*  footer */
+
+
+    #bottom-container {    
+        padding: 30px 25px;
+    }
+
+
+    .bottom-page {
+        padding: 5px 26px;
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+
+   
+    .fa-bars {
+        font-size: 30px;
+    }
+
+
+    .note {
+        font: 300 16px "Lato", sans-serif;
+    }
+}
+
+
+
+
 
