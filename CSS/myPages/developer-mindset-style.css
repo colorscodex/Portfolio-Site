@@ -1,1 +1,356 @@
+/*  
+ *  For all browsers
+ */
 
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+/*
+ *   For preventing adjustments of font size after 
+ *   orientation changes in IE and iOS.
+ *   =============================================
+ */
+
+html {
+    font-family: "Open sans", sans-serif;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+}
+
+/*  With ::-moz-focus-inner remove the inner border in Firefox. */  
+
+
+.go-back::-moz-focus-inner {
+    border-style: none;
+}   
+
+/*  In common */
+/*
+ *  display: -webkit-flex as an alternative 
+ *  for display: flex for Safari.
+ *  ===============================================
+ */
+
+footer,
+.up,
+.colors-page {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/*  
+*/
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open sans", sans-serif;    
+    width: 100%;
+    background-color: #fff8dc;
+    color: #000080;
+    z-index: -1;
+}
+
+/*  
+ *  The nav bar has a background made with a pixel (5*5)
+ *  and depth effect.
+ *  ====================================================
+ */
+/*  Nav: fixed. */
+
+.nav-button {
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    background-color: #696969;
+    width: 100%;
+    height: 70px;
+    display: block;    
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* to-do-list */
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;    
+}
+
+.close {
+    float: left;
+    margin-left: 20px;
+}
+
+/* nav button to go back to the Portfolio. */
+
+.go-back {
+    float: left;
+    padding: 0 0 2px 0;
+    width: 80px;
+    font: 300 20px "Open sans", sans-serif;
+    text-align: center;
+    background-color: #fffff0; 
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer; 
+    outline: none; 
+    text-decoration: none;  
+}
+
+/*  When mouse is over link, the button seems moving.  */
+
+
+.go-back:focus,
+.go-back:hover {
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.3);
+    background-color: #fffff0;
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+/*  Contaiener */
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0; 
+
+}
+
+/*  Text area */
+
+article {
+    width: 100%;  
+    text-align: justify;
+    margin: 0;
+    padding: 0 100px;  
+}
+
+/*
+ *  Specification of the text properties.
+ */
+       
+h1 {
+    font: 600 35px "Open sans", sans-serif;
+    color: #000080;
+    margin: 105px auto;
+    text-align: center;
+}
+
+/* The "rem" depends on the size of the letter base, 1rem = 16px.  */ 
+
+p::first-letter {
+    color: #6495ed;
+    font-size: xx-large;
+}
+
+
+p {
+    font: 400 1rem "Open sans", sans-serif;                     
+}
+
+p:first-of-type {
+    margin-top: -70px;
+}
+
+p:last-of-type::first-letter {
+    color: #000080;
+    font-size: 1rem;
+}
+
+p:last-of-type {
+    margin: 40px 0 10px 0;
+}
+
+.quote {
+    border-left: 4px solid  #000080;
+    padding-left: 10px;
+}
+
+.quote::first-letter {
+    color: #000080;
+    font-size: 1rem;
+}
+
+/*
+ *  A link for going to other pages.
+ *  ===================================
+ */
+
+.change-page {
+    color: #6495ed;
+    outline: none;
+    cursor: pointer;
+}
+
+/*  When mouse is over link, change the color.  */
+
+.change-page:hover {
+    text-decoration: none;
+    color: #ff7f50;
+}
+
+/*  
+ *  TODO: A link for going to the top of the page.
+ *  ==============================================
+ */
+
+
+.up {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    font-size: 20px;
+    width: 100%;
+    padding: 0 100px;
+    margin: 20px  auto;
+}
+
+.fa-arrow {
+    outline: none;
+    text-decoration: none;
+    color: #ff7f50;
+    width: 20px;
+    margin: 0 8px;
+    text-align: center;     
+}
+
+/*  Footer */
+
+/*
+ *  The justify-content property aligns the flexible container's items.   
+ *  -webkit-justify-content: space-between
+ *  as an alternative for the property justify-content
+ *  for Safari 6.1 (and newer).        
+ *//*
+ *  Align-items property: flex-end the alignments
+ *  for the two items, one with a image and other with text
+ *  of the flexible <footer> element.
+ */
+
+footer {
+    background-color: #696969; 
+    justify-content: space-between;
+    align-items: flex-end;
+    -webkit-justify-content: space-between; 
+    -webkit-align-items: flex-end;
+    margin: 0;
+    padding: 30px 100px;
+}
+
+.image-footer {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0;
+    display: block;
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.2);
+}
+
+/*  Colors used in the page. */
+
+.colors-page {
+    font: 400 1rem "Open sans", sans-serif;
+    color: #fff8dc;
+    width: 50%;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin: 0;
+}
+
+.cornsilk,
+.navy,
+.cornflowerblue {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 5px;
+    box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cornsilk {
+    background-color: #fff8dc;
+}
+
+.navy {
+    background-color: #000080;
+}
+
+.cornflowerblue {
+    background-color: #6495ed;
+    margin-left: 10px;
+}
+
+/*  
+ *  Layout responsive: for minimizing the text size.
+ *  ================================================
+ */
+
+@media screen and (max-width: 800px){
+
+    footer {
+        display: block;
+        padding: 20px 15px;
+    }
+
+    .image-footer {
+        margin: 0 auto;
+    }
+
+    .colors-page {
+        font-size: 0.8rem; 
+        width: 100%;
+        margin: 20px auto 0 auto;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    h1 {
+        font: 600 20px "Open sans", sans-serif;
+        margin-bottom: 0;  
+    }
+   
+    p {
+        font: 400 16px "Open sans", sans-serif;      
+    }
+ 
+    p:first-of-type {
+        margin-top: 20px;
+    }
+
+    article,
+    .up {
+       padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 999px){
+
+    h1 {
+        font: 600 33px "Open sans", sans-serif;        
+    } 
+
+    p:first-of-type {
+        margin-top: -30px;
+    }
+}
