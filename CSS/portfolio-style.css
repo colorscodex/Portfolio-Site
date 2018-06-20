@@ -545,19 +545,18 @@ h3 {
 
 #stop-moving {
     padding: 10px 7px;
-    margin: 300px 40px 0 0;
 } 
 
 
 #reset-alembic {
     padding: 10px 5.25px;
-    margin: 475px 0 0 -75px;
 } 
 
 
 #stop-moving,
 #reset-alembic {
     float: left;
+    margin: 40px 0;
     background-color: #2f4f4f; 
     border: none;
     color: #fffff0;
@@ -715,6 +714,13 @@ em {
     background: #2f4f4f linear-gradient(to bottom right, #fffff0, #2f4f4f);
     z-index: 1;
 }
+
+
+/*  A class for figures with movement. */
+
+.figures {        
+        margin: 0 auto;
+    }
 
 
 /*  TODO: A link for going to the top of the page. 
@@ -985,13 +991,19 @@ em {
         margin: 50px 0;
     }
 
+    
+    .figures {        
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
 
+    
     /* buttons */
 
 
     #stop-moving,
     #reset-alembic {
-        margin: 25px 0 0 300px;
+        margin: 50px 0;
     }
 
 
@@ -1123,18 +1135,19 @@ em {
     .specification-image {        
         margin: 75px 0;
     }
+    
+    
+    .figures {        
+        padding-bottom: 50px;
+    }
 
 
     /*  buttons */
 
 
-    #stop-moving {
-        margin: 35px 200px 0 560px;
-    }
-
-
+    #stop-moving,
     #reset-alembic {
-        margin: 35px 0 0 560px;
+        margin: 20px 0;
     }
 
 
