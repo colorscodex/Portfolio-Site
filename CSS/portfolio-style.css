@@ -555,7 +555,7 @@ h3 {
 
 #stop-moving,
 #reset-alembic {
-    float: left;
+    float: right;
     margin: 40px 0;
     background-color: #2f4f4f; 
     border: none;
