@@ -1377,13 +1377,9 @@ em {
     }
 
 
-    #stop-moving {
-        margin: 455px 15px 0 0px;
-    }
-
-
+    #stop-moving,
     #reset-alembic {
-        margin: 455px 0 0 -35px;
+        margin: 50px 0;
     }
 
 
