@@ -12,14 +12,18 @@
     z-index: 1;
 }
 
+
 .row {
     align-items: center;
-    -webkit-align-items: center;}
+    -webkit-align-items: center;
+}
+
 
 .row:first-of-type {
     margin-left: 50px;
     display: flex;
 }
+
         
 #circle-1,
 #circle-2,
@@ -36,13 +40,16 @@
     z-index: 10;
 }
 
+
 /* webkit for Safari 4.0 - 8.0 */
+
 
 #circle-1 {
     background-color: #696969;
     animation: billiardsOne 5s infinite;
     -webkit-animation: billiardsOne 5s infinite;
 }
+
 
 #circle-2 {
     background-color: #2f4f4f;
@@ -56,11 +63,13 @@
     -webkit-animation: billiardsThree 5s infinite; 
 }
 
+
 #circle-4 {
     background-color: #fffff0;
     animation: billiardsFour 5s infinite;
     -webkit-animation: billiardsFour 5s infinite; 
 }
+
 
 /*
     The @keyframes rule specifies the animation code.
@@ -71,7 +80,7 @@
 
 
 @keyframes billiardsOne {
-	0%   {top: 0px; left: 0px; background: #696969;}
+    0%   {top: 0px; left: 0px; background: #696969;}
     33%  {top: 150px; left: 50px; background: #ff7f50;}
     66%  {top: 150px; left: -10px; background: #fffff0;}   
     100% {top: 0px; left: 0px; background: #696969;}
@@ -79,14 +88,15 @@
 
 
 @keyframes billiardsTwo {
-	0%   {top: 0px; left: 0px; background: #2f4f4f;}
+    0%   {top: 0px; left: 0px; background: #2f4f4f;}
     33%  {top: 150px; left: 0px; background: #ff7f50;}
     66%  {top: 150px; left: -60px; background: #fffff0}  
     100% {top: 0px; left: 0px; background: #2f4f4f;}
 }
 
+
 @keyframes billiardsThree {
-	0%   {top: 0px; left: 0px; background: #ff7f50;}
+    0%   {top: 0px; left: 0px; background: #ff7f50;}
     25%  {top: -50px; left: 50px; background: #696969;}   
     50%  {top: 100px; left: 100px; background: #696969;}
     75% {top: 40px; left: 0px; background: #fffff0;}
@@ -95,12 +105,13 @@
 
 
 @keyframes billiardsFour {
-	0%   {top: 0px; left: 0px; background: #fffff0;}
+    0%   {top: 0px; left: 0px; background: #fffff0;}
     25%  {top: -90px; left: 50px; background: #696969;}
     50%  {top: 60px; left: 100px; background: #2f4f4f;}
     75%  {top: 60px; left: 40px; background: #696969;}
     100% {top: 0px; left: 0px; background: #fffff0;}
 }
+
 
 @-webkit-keyframes billiardsOne {
     0%   {top: 0px; left: 0px; background: #696969;}
@@ -116,6 +127,7 @@
     66%  {top: 150px; left: -60px; background: #fffff0}  
     100% {top: 0px; left: 0px; background: #2f4f4f;}
 }
+
 
 @-webkit-keyframes billiardsThree {
     0%   {top: 0px; left: 0px; background: #ff7f50;}
