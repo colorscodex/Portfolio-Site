@@ -522,7 +522,7 @@ h3 {
     width: 400px;
     height: 400px;
     color: #fffff0;
-    background-color: #2f4f4f;
+    background: #2f4f4f radial-gradient(#2f4f4f 70%, #fffff0 10% );
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;  
     transform: rotateY(180deg);
@@ -876,7 +876,6 @@ em {
 
 /*  Layout responsive with two breack points.
     ========================================= */
-/*  For little screens, it changes font-family of the text. */
 
  
 @media screen and (max-width: 450px){
