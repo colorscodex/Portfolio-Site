@@ -804,6 +804,7 @@ em {
 
 .colors-page {
     font: 300 20px "Lato", sans-serif;
+    text-shadow: 2px 2px 4px #000000;
     color: #fffff0;
     width: 50%;
     justify-content: flex-end;
