@@ -704,8 +704,8 @@ em {
 
 .dot {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     margin-right: 10px;
     box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.3);
@@ -1466,6 +1466,15 @@ em {
 
     .note {
         font: 300 16px "Lato", sans-serif;
+    }
+    
+    
+    /* A dot to highlight the type of movement. */
+
+
+    .dot {
+        width: 10px;
+        height: 10px;
     }
 }
 
