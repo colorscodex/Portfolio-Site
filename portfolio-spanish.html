@@ -308,13 +308,16 @@
 			</div>
 		</div>
 	
+		<!-- If we include our script in the <head> normally, it will run as soon as it is downloaded, which will occur before the DOM has built the elements we want our script to run against. So our script wouldn´t be able to do anything. 
+		For that, we include it at the bottom of the <body>, but that would mean that the downloaded could potentially start later in the load process.-->
+	
 		<!-- For jQuery library -->
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 	
-	    <!-- Script -->
+		<!-- Script -->
 		<script src="JS/design.js"></script>
 
 	</body>
