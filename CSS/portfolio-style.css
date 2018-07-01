@@ -791,20 +791,12 @@ em {
 }
 
 
-.image-footer:focus,
-.image-footer:hover {
-    background-clip: padding-box;
-    border: 10px dotted #fffff0;
-
-}
-
-
 /* Colors used in the page. */
 
 
 .colors-page {
     font: 300 20px "Lato", sans-serif;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #696969;
     color: #fffff0;
     width: 50%;
     justify-content: flex-end;
