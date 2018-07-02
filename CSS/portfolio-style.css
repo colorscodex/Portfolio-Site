@@ -704,8 +704,8 @@ em {
 
 .dot {
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     margin-right: 10px;
     box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.3);
@@ -767,14 +767,16 @@ em {
 #bottom-container {
     position: relative;
     bottom: 0;
-    width: 100%;
-    background-color: #696969; 
+    width: 100%; 
     justify-content: space-between;
     align-items: flex-end;
     -webkit-justify-content: space-between; 
     -webkit-align-items: flex-end;
     margin: 0;
     padding: 30px 100px;
+    background: #696969 linear-gradient(to right, #2f4f4f, #696969);
+    background: #696969 -moz-linear-gradient(to right, #2f4f4f, #696969);
+    background: #696969 -webkit-linear-gradient(to right, #2f4f4f, #696969); 
 }
 
 
@@ -1466,8 +1468,8 @@ em {
 
 
     .dot {
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
     }
 }
 
