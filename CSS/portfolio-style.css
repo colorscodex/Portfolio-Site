@@ -31,7 +31,7 @@ nav,
 .navbar-list,
 header,
 #bottom-container,
-.bottom-page,
+.validator-box,
 .go-top,
 .colors-page,
 .card {
@@ -836,10 +836,58 @@ em {
 }
 
 
-/* bottom of the page with validator */
+/* bottom of the page with bibliography and validator */
 
 
-.bottom-page {
+.bibliography {
+    font: 300 16px "Lato", sans-serif;
+    border-top: 4px solid #fffff0;
+    margin: 0;
+    padding: 30px 100px;
+    width: 100%;
+    color: #2f4f4f;
+    background: #696969 linear-gradient(to right, #fffff0, #696969);
+    background: #696969 -moz-linear-gradient(to right, #fffff0, #696969);
+    background: #696969 -webkit-linear-gradient(to right, #fffff0, #696969); 
+}
+
+
+.bibliography h4 {
+    font: 300 18px "Lato", sans-serif;
+    margin-top: 0;
+}
+
+
+/* TODO: a list */
+
+.bibliography ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.bibliography li:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-right: 7px;
+    z-index: 1;
+    box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.3);
+    -webkit-box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.3);
+    -moz-box-shadow: 12px 15px 20px 0 rgba(69, 69, 69, 0.3);    
+    background: #2f4f4f linear-gradient(to bottom right, #fffff0, #2f4f4f);
+    background: #2f4f4f -moz-linear-gradient(to bottom right, #fffff0, #2f4f4f);
+    background: #2f4f4f -webkit-linear-gradient(to bottom right, #fffff0, #2f4f4f);
+
+}
+
+/* validator */
+
+
+.validator-box {
     border-top: 1px solid #fffff0;
     position: relative;
     bottom: 0;
@@ -1016,9 +1064,19 @@ em {
 
 
     /*  footer */
+    
+    
+    .bibliography {
+        padding: 15px;
+    }
 
 
-    .bottom-page {
+    .bibliography ul {
+        padding: 0;
+    }
+
+
+    .validator-box {
         padding: 3px 25px;
     }
 }
@@ -1166,9 +1224,14 @@ em {
 
 
     /* footer */
+    
+    
+    .bibliography {
+        padding: 15px 25px;
+    }
 
 
-    .bottom-page {
+    .validator-box {
         padding: 5px 30px;
     }
 }
@@ -1444,8 +1507,13 @@ em {
         padding: 30px 25px;
     }
 
+    
+    .bibliography {
+        padding: 15px 25px;
+    }
+    
 
-    .bottom-page {
+    .validator-box {
         padding: 5px 26px;
     }
 }
