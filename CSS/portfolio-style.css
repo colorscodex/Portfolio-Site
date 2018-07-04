@@ -854,7 +854,7 @@ em {
 
 .bibliography h4 {
     font: 300 18px "Lato", sans-serif;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 
@@ -881,8 +881,13 @@ em {
     background: #2f4f4f linear-gradient(to bottom right, #fffff0, #2f4f4f);
     background: #2f4f4f -moz-linear-gradient(to bottom right, #fffff0, #2f4f4f);
     background: #2f4f4f -webkit-linear-gradient(to bottom right, #fffff0, #2f4f4f);
-
 }
+
+
+.bibliography li {
+    margin-bottom: 10px;
+}
+
 
 /* validator */
 
